@@ -67,7 +67,7 @@ struct HomeTabSwiftUIView: View {
         case .tvShow:
             return AnyView(TVShowListSwiftUIView())
         case .person:
-            return AnyView(PersonsListSwiftUIView())
+            return AnyView(PopularPeopleSwiftUIView())
         }
     }
 }

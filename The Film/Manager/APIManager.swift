@@ -17,10 +17,16 @@ struct APIConstant {
     // Get TVShow list
     static let getTVShowList = baseUrl + "discover/tv?api_key=\(APIKey)&language=en-US&sort_by=popularity.desc&include_null_first_air_dates=false&page="
     
+    
+    // Get Popular persons list
+    static let getPouplarPersondList = baseUrl + "person/popular?api_key=\(APIKey)&language=en-US&page="
+    
     // Get Movie details
     static let getMovieDetails = baseUrl + "movie/%d?api_key=\(APIKey)&language=en-US&append_to_response=videos,credits,recommendations,reviews"
  
     // Get TVShow Details
     static let getTVShowDetails = baseUrl + "tv/%d?api_key=\(APIKey)&language=en-US&append_to_response=similar,credits,videos"
+    
+    
 }
 

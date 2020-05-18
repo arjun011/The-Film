@@ -48,4 +48,23 @@ class HomeClient {
             response(ResponseManager.error(error?.localizedDescription ?? "UnKnown"))
         }
     }
+    
+    /// Get Popular persons List
+    /// - Parameters:
+    ///   - pageIndex: page Index
+    ///   - response: TVShowListDataModel
+    func retrivePopularPersonsList(pageIndex: Int, response: @escaping(ResponseManager<PersonsListDataModel>) -> Void) {
+        ClientManager.GET(APIConstant.getPouplarPersondList + "\(pageIndex)", success: { (responseData, statusCode) in
+            do {
+                let session = try JSONDecoder().decode(PersonsListDataModel.self, from: responseData ?? Data())
+                response(ResponseManager.success(session))
+            } catch {
+                print(error.localizedDescription)
+                response(ResponseManager.error(error.localizedDescription))
+            }
+        }) { (error) in
+            debugPrint(error?.localizedDescription ?? "Unknow")
+            response(ResponseManager.error(error?.localizedDescription ?? "UnKnown"))
+        }
+    }
 }
