@@ -9,6 +9,7 @@
 import SwiftUI
 import SDWebImageSwiftUI
 struct TVShowDetailsSwiftUIView: View {
+    @Environment(\.presentationMode) var presentationMode
     var ShowID:Int?
     @ObservedObject var model = TVShowDetailsModel()
     @State var playTrailer:Bool = false
@@ -25,8 +26,19 @@ struct TVShowDetailsSwiftUIView: View {
                     .overlay(
                         Color.black.opacity(0.8)
                 ).edgesIgnoringSafeArea(.all)
-                
+                .navigationBarHidden(true)
                 VStack(alignment: .leading, spacing: 2) {
+                    
+                    Button(action: {
+                        // Back
+                        self.presentationMode.wrappedValue.dismiss()
+                    }) {
+                        HStack {
+                            Image(systemName: "chevron.left")
+                            Text("Home")
+                        }
+                        .font(.headline)
+                    }.padding([.leading, .bottom, .top], 10)
                     
                     TVShowDetailsHeaderSwiftUIView(tvShowDetails: self.model.tvShowDetails)
                     
@@ -59,7 +71,7 @@ struct TVShowDetailsSwiftUIView: View {
                                     Text("Play Trailer")
                                 }
                             }.sheet(isPresented: self.$playTrailer) {
-                                WebViewSwiftUIView()
+                                WebViewSwiftUIView(playUrl: self.model.tvShowDetails?.videos?.results.count ?? 0 > 0 ? self.model.tvShowDetails?.videos?.results[0].key : "")
                             }
                             
                             // TVShow Overview
@@ -103,10 +115,16 @@ struct TVShowDetailsSwiftUIView: View {
                     .font(.callout)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal , 5)
+                .navigationBarTitle("",displayMode: .inline)
                 
+              //  .statusBar(hidden: true)
+                    
             }.onAppear {
                 self.model.getTvShowDetails(showId: self.ShowID ?? 1)
+               // self.model.getTvShowDetails(showId: 60735)
+                
             }
+        
         }
         
         

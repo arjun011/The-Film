@@ -21,6 +21,6 @@ struct APIConstant {
     static let getMovieDetails = baseUrl + "movie/%d?api_key=\(APIKey)&language=en-US&append_to_response=videos,credits,recommendations,reviews"
  
     // Get TVShow Details
-    static let getTVShowDetails = baseUrl + "tv/%d?api_key=\(APIKey)&language=en-US&append_to_response=similar,credits"
+    static let getTVShowDetails = baseUrl + "tv/%d?api_key=\(APIKey)&language=en-US&append_to_response=similar,credits,videos"
 }
 

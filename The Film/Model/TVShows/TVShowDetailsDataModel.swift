@@ -32,6 +32,7 @@ struct TVShowDetailsDataModel: Codable {
     var vote_count:Int?
     var similar:TVShowListDataModel?
     var credits:creditsDataModel?
+    var videos:videoDataModel?
     
 }
 

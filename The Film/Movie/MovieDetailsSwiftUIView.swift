@@ -56,7 +56,7 @@ struct MovieDetailsSwiftUIView: View {
                             Text("Play Trailer")
                         }
                     }.sheet(isPresented: self.$playTrailer) {
-                        WebViewSwiftUIView()
+                                                        WebViewSwiftUIView(playUrl: self.model.movieDetails?.videos?.results.count ?? 0 > 0 ? self.model.movieDetails?.videos?.results[0].key : "")
                     }
                     
                     // OverView of movie

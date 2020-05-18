@@ -17,7 +17,7 @@ struct ContentView: View {
             if self.moveHomePage {
                 TabbarSwiftUI()
             }else {
-                VStack {
+                VStack { 
                     Text("The Film")
                         .font(.largeTitle)
                         .fontWeight(.bold)

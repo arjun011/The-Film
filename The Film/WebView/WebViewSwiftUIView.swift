@@ -9,22 +9,23 @@
 import SwiftUI
 import WebKit
 struct WebViewSwiftUIView: View {
+    var playUrl:String?
     @Environment(\.presentationMode) var presentation
-    let webview = Webview(web: nil, req: URLRequest(url: URL(string: "https://www.youtube.com/watch?v=P6AaSMfXHbA")!))
+   // let webview = Webview(web: nil, req: URLRequest(url: URL(string: "https://www.youtube.com/watch?v=P6AaSMfXHbA")!))
 
     var body: some View {
         ZStack {
-            webview
+            Webview(web: nil, req: URLRequest(url: URL(string: "https://www.youtube.com/watch?v=\(playUrl ?? "")")!))
             .edgesIgnoringSafeArea(.all)
-            
         }
         
     }
+    
 }
 
 struct WebViewSwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        WebViewSwiftUIView()
+        WebViewSwiftUIView(playUrl: "Yj0l7iGKh8g")
     }
 }
 
