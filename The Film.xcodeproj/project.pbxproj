@@ -18,6 +18,12 @@
 		DC1B870224696D3F00F05A41 /* TVShowCellSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1B870124696D3F00F05A41 /* TVShowCellSwiftUIView.swift */; };
 		DC1B870524697B4700F05A41 /* MovieDetailsSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1B870424697B4700F05A41 /* MovieDetailsSwiftUIView.swift */; };
 		DC1B870724697B6300F05A41 /* MovieDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1B870624697B6300F05A41 /* MovieDetailsDataModel.swift */; };
+		DC2B0A0924724C3000FC483B /* TVShowDetailsHeaderSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B0A0824724C3000FC483B /* TVShowDetailsHeaderSwiftUIView.swift */; };
+		DC2B0A0B247252D400FC483B /* TVShowDetailsOverViewSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B0A0A247252D400FC483B /* TVShowDetailsOverViewSwiftUIView.swift */; };
+		DC2B0A0D2472548400FC483B /* TVShowDetailsCastSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B0A0C2472548400FC483B /* TVShowDetailsCastSwiftUIView.swift */; };
+		DC2B0A0F2472550200FC483B /* TVShowDetailsCreatedbySwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B0A0E2472550200FC483B /* TVShowDetailsCreatedbySwiftUIView.swift */; };
+		DC2B0A1124725AD900FC483B /* TVShowDetailsSeasonSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B0A1024725AD900FC483B /* TVShowDetailsSeasonSwiftUIView.swift */; };
+		DC2B0A1324725F2100FC483B /* TVDetailsRecommendationShowSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2B0A1224725F2100FC483B /* TVDetailsRecommendationShowSwiftUIView.swift */; };
 		DC55F19024614E3A0046228F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55F18F24614E3A0046228F /* AppDelegate.swift */; };
 		DC55F19224614E3A0046228F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC55F19124614E3A0046228F /* SceneDelegate.swift */; };
 		DC55F19524614E3A0046228F /* The_Film.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC55F19324614E3A0046228F /* The_Film.xcdatamodeld */; };
@@ -82,6 +88,12 @@
 		DC1B870124696D3F00F05A41 /* TVShowCellSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowCellSwiftUIView.swift; sourceTree = "<group>"; };
 		DC1B870424697B4700F05A41 /* MovieDetailsSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsSwiftUIView.swift; sourceTree = "<group>"; };
 		DC1B870624697B6300F05A41 /* MovieDetailsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsDataModel.swift; sourceTree = "<group>"; };
+		DC2B0A0824724C3000FC483B /* TVShowDetailsHeaderSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailsHeaderSwiftUIView.swift; sourceTree = "<group>"; };
+		DC2B0A0A247252D400FC483B /* TVShowDetailsOverViewSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailsOverViewSwiftUIView.swift; sourceTree = "<group>"; };
+		DC2B0A0C2472548400FC483B /* TVShowDetailsCastSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailsCastSwiftUIView.swift; sourceTree = "<group>"; };
+		DC2B0A0E2472550200FC483B /* TVShowDetailsCreatedbySwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailsCreatedbySwiftUIView.swift; sourceTree = "<group>"; };
+		DC2B0A1024725AD900FC483B /* TVShowDetailsSeasonSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailsSeasonSwiftUIView.swift; sourceTree = "<group>"; };
+		DC2B0A1224725F2100FC483B /* TVDetailsRecommendationShowSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDetailsRecommendationShowSwiftUIView.swift; sourceTree = "<group>"; };
 		DC55F18C24614E3A0046228F /* The Film.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Film.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC55F18F24614E3A0046228F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC55F19124614E3A0046228F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,11 +193,25 @@
 		DC1B870324697B3000F05A41 /* Movie */ = {
 			isa = PBXGroup;
 			children = (
+				DC936152246D457D005AE79A /* MovieDetails Custom Cell */,
 				DC10E0DE246A921C006A133C /* MovieDetailsModel.swift */,
 				DC10E0DC246A912E006A133C /* MovieDetailsClient.swift */,
 				DC1B870424697B4700F05A41 /* MovieDetailsSwiftUIView.swift */,
 			);
 			path = Movie;
+			sourceTree = "<group>";
+		};
+		DC2B0A0724724C0400FC483B /* TVShow Details Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DC2B0A0824724C3000FC483B /* TVShowDetailsHeaderSwiftUIView.swift */,
+				DC2B0A0A247252D400FC483B /* TVShowDetailsOverViewSwiftUIView.swift */,
+				DC2B0A0C2472548400FC483B /* TVShowDetailsCastSwiftUIView.swift */,
+				DC2B0A0E2472550200FC483B /* TVShowDetailsCreatedbySwiftUIView.swift */,
+				DC2B0A1024725AD900FC483B /* TVShowDetailsSeasonSwiftUIView.swift */,
+				DC2B0A1224725F2100FC483B /* TVDetailsRecommendationShowSwiftUIView.swift */,
+			);
+			path = "TVShow Details Custom Cell";
 			sourceTree = "<group>";
 		};
 		DC4C8A3D246ACA2100A27BB4 /* Custom cell */ = {
@@ -220,7 +246,6 @@
 			isa = PBXGroup;
 			children = (
 				DC7A3D81246EA25900E8EA83 /* TVShow */,
-				DC936152246D457D005AE79A /* MovieDetails Custom Cell */,
 				DC1451F0246BEC6200FA50A9 /* WebView */,
 				DC4C8A3D246ACA2100A27BB4 /* Custom cell */,
 				DC1B870324697B3000F05A41 /* Movie */,
@@ -285,6 +310,7 @@
 		DC7A3D81246EA25900E8EA83 /* TVShow */ = {
 			isa = PBXGroup;
 			children = (
+				DC2B0A0724724C0400FC483B /* TVShow Details Custom Cell */,
 				DC7A3D82246EA28000E8EA83 /* TVShowDetailsSwiftUIView.swift */,
 				DC7A3D84246EA2B000E8EA83 /* TVShowDetailsClient.swift */,
 				DC7A3D86246EA2D100E8EA83 /* TVShowDetailsModel.swift */,
@@ -508,6 +534,7 @@
 				DC1451F2246BEC7300FA50A9 /* WebViewSwiftUIView.swift in Sources */,
 				DC7A3D85246EA2B000E8EA83 /* TVShowDetailsClient.swift in Sources */,
 				DCB85E5D246281AF002BFF50 /* TVShowListSwiftUIView.swift in Sources */,
+				DC2B0A1124725AD900FC483B /* TVShowDetailsSeasonSwiftUIView.swift in Sources */,
 				DC7A3D83246EA28000E8EA83 /* TVShowDetailsSwiftUIView.swift in Sources */,
 				DC55F19724614E3A0046228F /* ContentView.swift in Sources */,
 				DC898B022461712D002DED05 /* TabbarSwiftUI.swift in Sources */,
@@ -516,6 +543,8 @@
 				DC55F1C424615A6E0046228F /* HomeView.swift in Sources */,
 				DC7A3D87246EA2D100E8EA83 /* TVShowDetailsModel.swift in Sources */,
 				DC898B04246173CA002DED05 /* HomeTabSwiftUIView.swift in Sources */,
+				DC2B0A0924724C3000FC483B /* TVShowDetailsHeaderSwiftUIView.swift in Sources */,
+				DC2B0A1324725F2100FC483B /* TVDetailsRecommendationShowSwiftUIView.swift in Sources */,
 				DC0E9736246943BF00BACC3A /* MovieModel.swift in Sources */,
 				DC1B870224696D3F00F05A41 /* TVShowCellSwiftUIView.swift in Sources */,
 				DCB85E672462A31A002BFF50 /* MovieListDataModel.swift in Sources */,
@@ -523,10 +552,13 @@
 				DC7A3D80246E4CEE00E8EA83 /* MovieDetailRecommendationsMovieListSwiftUIView.swift in Sources */,
 				DC1451EF246BA6EF00FA50A9 /* VoteAverageCircleSwiftUIView.swift in Sources */,
 				DC10E0DF246A921C006A133C /* MovieDetailsModel.swift in Sources */,
+				DC2B0A0D2472548400FC483B /* TVShowDetailsCastSwiftUIView.swift in Sources */,
+				DC2B0A0F2472550200FC483B /* TVShowDetailsCreatedbySwiftUIView.swift in Sources */,
 				DC7A3D7E246E4C0300E8EA83 /* MovieDetailCastSwiftUIView.swift in Sources */,
 				DC898B0A2461746F002DED05 /* MyStufTabSwiftUIView.swift in Sources */,
 				DCB85E702462BD35002BFF50 /* MovieCellSwiftUIView.swift in Sources */,
 				DC55F19524614E3A0046228F /* The_Film.xcdatamodeld in Sources */,
+				DC2B0A0B247252D400FC483B /* TVShowDetailsOverViewSwiftUIView.swift in Sources */,
 				DC1B870524697B4700F05A41 /* MovieDetailsSwiftUIView.swift in Sources */,
 				DC936154246D45E8005AE79A /* MovieDetailsHeaderSwiftUIView.swift in Sources */,
 				DC7A3D89246EA30800E8EA83 /* TVShowDetailsDataModel.swift in Sources */,

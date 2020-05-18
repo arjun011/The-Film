@@ -23,14 +23,14 @@ struct TVShowDetailsDataModel: Codable {
     var original_language:String?
     var original_name:String?
     var overview:String?
-    var popularity:String?
+    var popularity:Float?
     var poster_path:String?
     var seasons:[seasonsDataModel] = []
     var status:String?
     var type:String?
     var vote_average:Float?
     var vote_count:Int?
-    var similar:[TVShowListDataModel] = []
+    var similar:TVShowListDataModel?
     var credits:creditsDataModel?
     
 }

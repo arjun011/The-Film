@@ -17,7 +17,9 @@ struct TVShowListSwiftUIView: View {
                 if tvShowModel.TVShowListArray?.results.count ?? 0 > 0 {
                     QGrid(tvShowModel.TVShowListArray?.results ?? [TVShowDataModel](), columns: 2, columnsInLandscape: 3, vSpacing: 5, hSpacing: 5, vPadding: 0, hPadding: 5, isScrollable: true, showScrollIndicators: false) { movie in
                         
-                        TVShowCellSwiftUIView(movieObject: movie)
+                        NavigationLink(destination: TVShowDetailsSwiftUIView(ShowID: movie.id)) {
+                            TVShowCellSwiftUIView(movieObject: movie)
+                        }
                        
                     }
                     Button(action: {
