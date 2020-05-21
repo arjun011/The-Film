@@ -26,8 +26,13 @@ struct TVShowDetailsSeasonSwiftUIView: View {
                             WebImage(url: URL(string: self.getProfileImageUrl(season.poster_path)))
                                 .resizable()
                                 .renderingMode(.original)
+                                .placeholder(content: {
+                                                       Image(systemName: "star")
+                                                           .foregroundColor(.white)
+                                                           .font(.system(size: 35))
+                                                   })
                                 .frame(width: 80, height:120)
-                                //.aspectRatio(contentMode: .fit)
+
                                 .scaledToFit()
                                 .clipped()
                                 .cornerRadius(5)

@@ -9,7 +9,8 @@
 import SwiftUI
 import SDWebImageSwiftUI
 struct TVShowDetailsSwiftUIView: View {
-    @Environment(\.presentationMode) var presentationMode
+   // @Environment(\.presentationMode) var presentationMode
+
     var ShowID:Int?
     @ObservedObject var model = TVShowDetailsModel()
     @State var playTrailer:Bool = false
@@ -26,19 +27,20 @@ struct TVShowDetailsSwiftUIView: View {
                     .overlay(
                         Color.black.opacity(0.8)
                 ).edgesIgnoringSafeArea(.all)
-                .navigationBarHidden(true)
+              //
                 VStack(alignment: .leading, spacing: 2) {
                     
-                    Button(action: {
-                        // Back
-                        self.presentationMode.wrappedValue.dismiss()
-                    }) {
-                        HStack {
-                            Image(systemName: "chevron.left")
-                            Text("Home")
-                        }
-                        .font(.headline)
-                    }.padding([.leading, .bottom, .top], 10)
+//                    Button(action: {
+//                        // Back
+//                      //  self.presentationMode.wrappedValue.dismiss()
+//                          self.presentationMode.wrappedValue.dismiss()
+//                    }) {
+//                        HStack {
+//                            Image(systemName: "chevron.left")
+//                            Text("Home")
+//                        }
+//                        .font(.headline)
+//                    }.padding([.leading, .bottom, .top], 10)
                     
                     TVShowDetailsHeaderSwiftUIView(tvShowDetails: self.model.tvShowDetails)
                     
@@ -83,9 +85,25 @@ struct TVShowDetailsSwiftUIView: View {
                             //TVShow seasons list
                             TVShowDetailsSeasonSwiftUIView(tvShowDetails:self.model.tvShowDetails)
                             
-                            
                             //TVShow Cast
-                            TVShowDetailsCastSwiftUIView(tvShowDetails: self.model.tvShowDetails)
+                            VStack(alignment: .leading, content: {
+                                Text("Cast")
+                                    .font(.headline)
+                                ScrollView(.horizontal, showsIndicators: true) {
+                                    HStack(alignment: .center, spacing: 15, content: {
+                                        ForEach(self.model.tvShowDetails?.credits?.cast ?? [castDataModel](), id: \.id) { cast in
+                                            NavigationLink(destination: PopularPeopledetailsSwiftUIView(personID: cast.id)) {
+                                                MovieDetailCastSwiftUIView(cast: cast)
+                                            }
+                                            
+                                        }
+                                    })
+                                   
+                                }
+                            })
+                            
+                            
+                          //  TVShowDetailsCastSwiftUIView(tvShowDetails: self.model.tvShowDetails)
                             
                             // Recommendations TVShow list
                             VStack(alignment: .leading, content: {
@@ -107,27 +125,22 @@ struct TVShowDetailsSwiftUIView: View {
                             })
                         }
                     })
-                    
-                    
+                
                     Spacer()
-                    
                 }.foregroundColor(.white)
                     .font(.callout)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal , 5)
                 .navigationBarTitle("",displayMode: .inline)
-                
-              //  .statusBar(hidden: true)
-                    
+                //.navigationBarHidden(true)
+               // .navigationBarBackButtonHidden(true)
             }.onAppear {
                 self.model.getTvShowDetails(showId: self.ShowID ?? 1)
-               // self.model.getTvShowDetails(showId: 60735)
-                
             }
-        
-        }
-        
-        
+        }.overlay(
+            self.model.tvShowDetails == nil ? LoadingSwiftUIView() : nil
+        )
+
     }
     
     var getBackgroundImage: (String?) -> String  = {

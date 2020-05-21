@@ -16,9 +16,14 @@ struct PopularPersonsCellSwiftUIView: View {
                 WebImage(url: URL(string: self.getImageUrl(persons)))
                     .resizable()
                     .renderingMode(.original)
+                    .placeholder(content: {
+                                           Image(systemName: "star")
+                                               .foregroundColor(.white)
+                                               .font(.system(size: 35))
+                                       })
                     .aspectRatio(contentMode: .fit)
                     .clipped()
-                    .cornerRadius(5)
+                   .cornerRadius(5)
                     .padding(.bottom,10)
             }
             VStack(alignment: .leading, spacing: 3) {
@@ -33,10 +38,6 @@ struct PopularPersonsCellSwiftUIView: View {
     
     var getImageUrl:(PersonsDataModel?) -> String = {
         return imageBaseUrl + "w342" + ($0?.profile_path ?? "")
-    }
-    
-    var voteAvarage:(Float?) -> CGFloat = {
-        return CGFloat(($0 ?? 1.0) / 10)
     }
 }
 

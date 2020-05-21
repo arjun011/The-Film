@@ -15,8 +15,11 @@ struct TVDetailsRecommendationShowSwiftUIView: View {
                         WebImage(url: URL(string: self.getMovieImageUrl(tvShow)))
                             .resizable()
                             .renderingMode(.original)
-                            .placeholder(Image(systemName: "photo"))
-                            .indicator(.activity)
+                            .placeholder(content: {
+                                                   Image(systemName: "star")
+                                                       .foregroundColor(.white)
+                                                       .font(.system(size: 35))
+                                               })
                             .frame(width: 140, height:200)
                             .scaledToFit()
                             .clipped()

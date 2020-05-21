@@ -17,8 +17,9 @@ struct PopularPeopleSwiftUIView: View {
                 if self.model.popularPersonsList?.results.count ?? 0 > 0 {
                     QGrid(self.model.popularPersonsList?.results ?? [PersonsDataModel](), columns: 3, columnsInLandscape: 3, vSpacing: 5, hSpacing: 5, vPadding: 0, hPadding: 5, isScrollable: true, showScrollIndicators: false) { person in
                         
-                        PopularPersonsCellSwiftUIView(persons: person)
-                       
+                        NavigationLink(destination: PopularPeopledetailsSwiftUIView(personID: person.id)) {
+                            PopularPersonsCellSwiftUIView(persons: person)
+                        }
                     }
                     Button(action: {
                         self.model.pageIndex = self.model.pageIndex + 1

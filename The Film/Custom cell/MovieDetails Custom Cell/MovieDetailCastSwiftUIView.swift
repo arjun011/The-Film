@@ -9,39 +9,33 @@
 import SwiftUI
 import SDWebImageSwiftUI
 struct MovieDetailCastSwiftUIView: View {
-    var movieDetails:MovieDetailsDataModel?
+    var cast:castDataModel?
     var body: some View {
+        
         VStack(alignment: .leading, content: {
             
-            Text("Cast")
-                .font(.headline)
-            
-            ScrollView(.horizontal, showsIndicators: true) {
-                HStack(alignment: .center, spacing: 15, content: {
-                    ForEach(self.movieDetails?.credits?.cast ?? [castDataModel](), id: \.id) { item in
-                        
-                        VStack(alignment: .leading, content: {
-                            
-                            WebImage(url: URL(string: self.getProfileImageUrl(item.profile_path)))
-                                .resizable()
-                                .renderingMode(.original)
-                                .frame(width: 80, height:120)
-                                //.aspectRatio(contentMode: .fit)
-                                .scaledToFit()
-                                .clipped()
-                                .cornerRadius(5)
-                            
-                            Text("\(item.name ?? "")")
-                                .font(.caption)
-                                .fontWeight(.semibold)
-                            Text("\(item.character ?? "")")
-                                .font(.caption)
-                                .fixedSize(horizontal: false, vertical: true)
-                        })
-                    }
+            WebImage(url: URL(string: self.getProfileImageUrl(cast?.profile_path)))
+                .resizable()
+                .renderingMode(.original)
+                .placeholder(content: {
+                    Image(systemName: "star")
+                        .foregroundColor(.white)
+                        .font(.system(size: 35))
                 })
-            }
-        })
+                .frame(width: 80, height:120)
+            
+                .scaledToFit()
+                .clipped()
+                .cornerRadius(5)
+            
+            Text("\(cast?.name ?? "")")
+                .font(.caption)
+                .fontWeight(.semibold)
+            Text("\(cast?.character ?? "")")
+                .font(.caption)
+                .fixedSize(horizontal: false, vertical: true)
+        }).foregroundColor(Color.white)
+        
     }
     var getProfileImageUrl:(String?) -> String = {
         return imageBaseUrl + "h632" + ($0 ?? "")

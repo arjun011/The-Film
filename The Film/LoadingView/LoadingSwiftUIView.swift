@@ -10,15 +10,18 @@ import SwiftUI
 
 struct LoadingSwiftUIView: View {
     var body: some View {
-        VStack {
-            Spacer()
-            Image(systemName: "film")
-                .font(.system(size: 30))
-                .foregroundColor(.blue)
-            Text("Loading....")
-                .font(.system(size: 20))
-                .foregroundColor(.white)
-            Spacer()
+        ZStack {
+            Color.black
+            VStack {
+                Spacer()
+                Image(systemName: "film")
+                    .font(.system(size: 30))
+                    .foregroundColor(.blue)
+//                Text("Loading....")
+//                    .font(.system(size: 20))
+//                    .foregroundColor(.white)
+                Spacer()
+            }
         }
     }
 }

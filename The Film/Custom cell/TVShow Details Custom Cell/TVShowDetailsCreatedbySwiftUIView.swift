@@ -25,8 +25,12 @@ struct TVShowDetailsCreatedbySwiftUIView: View {
                             WebImage(url: URL(string: self.getProfileImageUrl(user.profile_path)))
                                 .resizable()
                                 .renderingMode(.original)
+                                .placeholder(content: {
+                                    Image(systemName: "star")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 35))
+                                })
                                 .frame(width: 80, height:120)
-                                //.aspectRatio(contentMode: .fit)
                                 .scaledToFit()
                                 .clipped()
                                 .cornerRadius(5)
@@ -34,7 +38,7 @@ struct TVShowDetailsCreatedbySwiftUIView: View {
                             Text("\(user.name ?? "")")
                                 .font(.caption)
                                 .fontWeight(.semibold)
-                           
+                            
                         })
                     }
                 })

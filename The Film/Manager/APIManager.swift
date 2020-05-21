@@ -22,10 +22,15 @@ struct APIConstant {
     static let getPouplarPersondList = baseUrl + "person/popular?api_key=\(APIKey)&language=en-US&page="
     
     // Get Movie details
-    static let getMovieDetails = baseUrl + "movie/%d?api_key=\(APIKey)&language=en-US&append_to_response=videos,credits,recommendations,reviews"
+    static let getMovieDetails = baseUrl + "movie/%d?api_key=\(APIKey)&language=ar&append_to_response=videos,credits,recommendations,reviews"
  
     // Get TVShow Details
     static let getTVShowDetails = baseUrl + "tv/%d?api_key=\(APIKey)&language=en-US&append_to_response=similar,credits,videos"
+    
+   // Get Popular person details
+    static let getPersonDetails = baseUrl + "person/%d?api_key=\(APIKey)&language=en-US&append_to_response=combined_credits"
+    
+
     
     
 }
