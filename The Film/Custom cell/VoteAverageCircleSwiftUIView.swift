@@ -14,10 +14,18 @@ struct VoteAverageCircleSwiftUIView: View {
         return CGFloat((voteAverage ?? 1.0) / 10)
     }
     var circleFrame:(width: CGFloat, height: CGFloat)
+    
+    private var fillColor: Color {
+        get {
+            let fillColor = [Color.green, Color.yellow]
+            return fillColor.randomElement() ?? Color.green
+        }
+    }
+    
     var body: some View {
         ZStack {
             Circle()
-                .stroke(Color.gray,style: StrokeStyle(lineWidth: 4.0, lineCap: CGLineCap.round))
+                .stroke(Color.gray,style: StrokeStyle(lineWidth: 3.0, lineCap: CGLineCap.round))
                 .frame(width: self.circleFrame.width ,height: self.circleFrame.height)
             
             Circle()
@@ -26,7 +34,7 @@ struct VoteAverageCircleSwiftUIView: View {
             
             Circle()
                 .trim(from: 0, to: voteAverageNumber ?? 0.1)
-                .stroke(Color.white,style: StrokeStyle(lineWidth: 4, lineCap: CGLineCap.round))
+                .stroke(fillColor ,style: StrokeStyle(lineWidth: 3, lineCap: CGLineCap.round))
                 .frame(width: self.circleFrame.width ,height: self.circleFrame.height)
                 .rotationEffect(.degrees(-90))
                 .overlay(

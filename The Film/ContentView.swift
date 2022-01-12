@@ -15,7 +15,7 @@ struct ContentView: View {
             Color.black
                 .edgesIgnoringSafeArea(.all)
             if self.moveHomePage {
-                TabbarSwiftUI()
+                HomeTabView()
             }else {
                 VStack { 
                     Text("The Film")

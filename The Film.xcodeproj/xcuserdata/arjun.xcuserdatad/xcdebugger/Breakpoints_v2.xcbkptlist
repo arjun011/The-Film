@@ -226,38 +226,6 @@
             endingLineNumber = "66"
             landmarkName = "body"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "4D4AFFCA-99D2-4A30-9704-C5FE822D76E7 - 993f59c9ebb689f9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.font(Swift.Optional&lt;SwiftUI.Font&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.sheet&lt;A where A1: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; A1) -&gt; some&gt;&gt;.0, The_Film.MovieDetailsOverViewSwiftUIView, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.castDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, SwiftUI.NavigationLink&lt;The_Film.MovieDetailCastSwiftUIView, The_Film.PopularPeopledetailsSwiftUIView&gt;&gt;&gt;&gt;)&gt;&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.MovieDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0&gt;&gt;&gt;)&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(_: SwiftUI.Text, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0 in closure #1 (SwiftUI.GeometryProxy) -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0 in The_Film.MovieDetailsSwiftUIView.body.getter : some"
-                  moduleName = "The Film"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arjun/Desktop/SwiftUILearning/The%20Film/The%20Film/Movie%20Details/MovieDetailsSwiftUIView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "2304">
-               </Location>
-               <Location
-                  uuid = "4D4AFFCA-99D2-4A30-9704-C5FE822D76E7 - c0be81e36bbc641c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #5 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.castDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, SwiftUI.NavigationLink&lt;The_Film.MovieDetailCastSwiftUIView, The_Film.PopularPeopledetailsSwiftUIView&gt;&gt;&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.font(Swift.Optional&lt;SwiftUI.Font&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.sheet&lt;A where A1: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; A1) -&gt; some&gt;&gt;.0, The_Film.MovieDetailsOverViewSwiftUIView, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.castDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, SwiftUI.NavigationLink&lt;The_Film.MovieDetailCastSwiftUIView, The_Film.PopularPeopledetailsSwiftUIView&gt;&gt;&gt;&gt;)&gt;&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.MovieDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0&gt;&gt;&gt;)&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(_: SwiftUI.Text, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0 in closure #1 (SwiftUI.GeometryProxy) -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0 in The_Film.MovieDetailsSwiftUIView.body.getter : some"
-                  moduleName = "The Film"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arjun/Desktop/SwiftUILearning/The%20Film/The%20Film/Movie%20Details/MovieDetailsSwiftUIView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "320">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -290,38 +258,6 @@
             endingLineNumber = "72"
             landmarkName = "body"
             landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "C21795D9-B0C2-4999-AF8F-85815D276D2E - bc3d1384380209fc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (The_Film.castDataModel) -&gt; SwiftUI.NavigationLink&lt;The_Film.MovieDetailCastSwiftUIView, The_Film.PopularPeopledetailsSwiftUIView&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.castDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, SwiftUI.NavigationLink&lt;The_Film.MovieDetailCastSwiftUIView, The_Film.PopularPeopledetailsSwiftUIView&gt;&gt; in closure #1 () -&gt; SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.castDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, SwiftUI.NavigationLink&lt;The_Film.MovieDetailCastSwiftUIView, The_Film.PopularPeopledetailsSwiftUIView&gt;&gt;&gt; in closure #5 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.castDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, SwiftUI.NavigationLink&lt;The_Film.MovieDetailCastSwiftUIView, The_Film.PopularPeopledetailsSwiftUIView&gt;&gt;&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.font(Swift.Optional&lt;SwiftUI.Font&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.sheet&lt;A where A1: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; A1) -&gt; some&gt;&gt;.0, The_Film.MovieDetailsOverViewSwiftUIView, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.castDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, SwiftUI.NavigationLink&lt;The_Film.MovieDetailCastSwiftUIView, The_Film.PopularPeopledetailsSwiftUIView&gt;&gt;&gt;&gt;)&gt;&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.MovieDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0&gt;&gt;&gt;)&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(_: SwiftUI.Text, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0 in closure #1 (SwiftUI.GeometryProxy) -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0 in The_Film.MovieDetailsSwiftUIView.body.getter : some"
-                  moduleName = "The Film"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arjun/Desktop/SwiftUILearning/The%20Film/The%20Film/Movie%20Details/MovieDetailsSwiftUIView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "280">
-               </Location>
-               <Location
-                  uuid = "C21795D9-B0C2-4999-AF8F-85815D276D2E - 4b8a7e2081f5b926"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; The_Film.MovieDetailCastSwiftUIView in closure #1 (The_Film.castDataModel) -&gt; SwiftUI.NavigationLink&lt;The_Film.MovieDetailCastSwiftUIView, The_Film.PopularPeopledetailsSwiftUIView&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.castDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, SwiftUI.NavigationLink&lt;The_Film.MovieDetailCastSwiftUIView, The_Film.PopularPeopledetailsSwiftUIView&gt;&gt; in closure #1 () -&gt; SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.castDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, SwiftUI.NavigationLink&lt;The_Film.MovieDetailCastSwiftUIView, The_Film.PopularPeopledetailsSwiftUIView&gt;&gt;&gt; in closure #5 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.castDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, SwiftUI.NavigationLink&lt;The_Film.MovieDetailCastSwiftUIView, The_Film.PopularPeopledetailsSwiftUIView&gt;&gt;&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.font(Swift.Optional&lt;SwiftUI.Font&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.sheet&lt;A where A1: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; A1) -&gt; some&gt;&gt;.0, The_Film.MovieDetailsOverViewSwiftUIView, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.castDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, SwiftUI.NavigationLink&lt;The_Film.MovieDetailCastSwiftUIView, The_Film.PopularPeopledetailsSwiftUIView&gt;&gt;&gt;&gt;)&gt;&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ScrollView&lt;SwiftUI.HStack&lt;SwiftUI.ForEach&lt;Swift.Array&lt;The_Film.MovieDataModel&gt;, Swift.Optional&lt;Swift.Int&gt;, &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0&gt;&gt;&gt;)&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.navigationBarTitle(_: SwiftUI.Text, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0 in closure #1 (SwiftUI.GeometryProxy) -&gt; &lt;&lt;opaque return type of (extension in SwiftUI):SwiftUI.View.foregroundColor(Swift.Optional&lt;SwiftUI.Color&gt;) -&gt; some&gt;&gt;.0 in The_Film.MovieDetailsSwiftUIView.body.getter : some"
-                  moduleName = "The Film"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arjun/Desktop/SwiftUILearning/The%20Film/The%20Film/Movie%20Details/MovieDetailsSwiftUIView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "73"
-                  endingLineNumber = "73"
-                  offsetFromSymbolStart = "284">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -338,6 +274,54 @@
             endingLineNumber = "31"
             landmarkName = "body"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "880490B8-CADD-4ADF-A4F1-7F0272AE118A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "The Film/Movie/MovieOO.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "getNowPlayingMovie()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0095632C-7D04-4F32-85AE-C1E5B46A4901"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "The Film/Movie/MovieOO.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "getNowPlayingMovie()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "274D3718-CE5D-4952-A19D-2D9BF95CC9D5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "The Film/Movie/MovieOO.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "getNowPlayingMovie()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
