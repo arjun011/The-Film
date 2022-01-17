@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct TVShowDetailsDataModel: Codable {
+struct TVShowDetailsDataModel: Codable , Identifiable{
     var backdrop_path:String?
     var created_by:[created_byDataModel] = []
     var episode_run_time:[Int] = []

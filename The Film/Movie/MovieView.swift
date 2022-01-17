@@ -30,7 +30,7 @@ struct MovieView: View {
                 }.padding(.horizontal)
                 .font(.system(size: 15, weight: .bold))
                 
-                HListView(movieDataModelList: $model.nowPlayingMovieList)
+                HMovieListView(movieDataModelList: $model.nowPlayingMovieList)
                 
                 HStack(alignment: .center) {
                     
@@ -44,7 +44,7 @@ struct MovieView: View {
                 }.padding(.horizontal)
                 .font(.system(size: 15, weight: .bold))
                 
-                HListView(movieDataModelList: $model.popularMovieList)
+                HMovieListView(movieDataModelList: $model.popularMovieList)
                 
                 
                 HStack(alignment: .center) {
@@ -59,7 +59,7 @@ struct MovieView: View {
                 }.padding(.horizontal)
                 .font(.system(size: 15, weight: .bold))
                 
-                HListView(movieDataModelList: $model.topRatedMovieList)
+                HMovieListView(movieDataModelList: $model.topRatedMovieList)
                 
                 Group {
                     
@@ -74,7 +74,7 @@ struct MovieView: View {
                         }
                     }.padding(.horizontal)
                         .font(.system(size: 15, weight: .bold))
-                    HListView(movieDataModelList: $model.upCommingList)
+                    HMovieListView(movieDataModelList: $model.upCommingList)
                 }
                 
                 

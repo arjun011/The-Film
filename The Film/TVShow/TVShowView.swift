@@ -10,7 +10,7 @@ import SwiftUI
 
 struct TVShowView: View {
     
-    @StateObject private var model = MovieOO()
+    @StateObject private var model = TVShowOO()
     @State var movieList = [MovieDataModel]()
     var body: some View {
         
@@ -19,7 +19,7 @@ struct TVShowView: View {
             VStack(alignment: .leading, spacing: 15) {
                 
                 HStack(alignment: .center) {
-                    Text("Now Playing")
+                    Text("Popular")
                     Spacer()
                     Button {
                         
@@ -29,11 +29,11 @@ struct TVShowView: View {
                 }.padding(.horizontal)
                 .font(.system(size: 15, weight: .bold))
                 
-                HListView(movieDataModelList: $model.nowPlayingMovieList)
+                HTVListView(TVDataModelList: $model.popularTVList)
                 
                 HStack(alignment: .center) {
                     
-                    Text("Poular")
+                    Text("Airing Today")
                     Spacer()
                     Button {
                         
@@ -43,12 +43,12 @@ struct TVShowView: View {
                 }.padding(.horizontal)
                 .font(.system(size: 15, weight: .bold))
                 
-                HListView(movieDataModelList: $model.popularMovieList)
+                HTVListView(TVDataModelList: $model.airingTodayTVList)
                 
                 
                 HStack(alignment: .center) {
                     
-                    Text("Top Rated")
+                    Text("On TV")
                     Spacer()
                     Button {
                         
@@ -58,13 +58,13 @@ struct TVShowView: View {
                 }.padding(.horizontal)
                 .font(.system(size: 15, weight: .bold))
                 
-                HListView(movieDataModelList: $model.topRatedMovieList)
+                HTVListView(TVDataModelList: $model.onTVList)
                 
                 Group {
                     
                     HStack(alignment: .center) {
                         
-                        Text("Upcomming")
+                        Text("Top Rated")
                         Spacer()
                         Button {
                             
@@ -73,16 +73,20 @@ struct TVShowView: View {
                         }
                     }.padding(.horizontal)
                         .font(.system(size: 15, weight: .bold))
-                    HListView(movieDataModelList: $model.upCommingList)
+                    HTVListView(TVDataModelList: $model.topRatedTVList)
                 }
                 
                 
             }.onAppear {
                 debugPrint("Get Now laying")
-                self.model.getNowPlayingMovie()
-                self.model.getPopularMovie()
-                self.model.getTopRatedMovie()
-                self.model.getUpCommingMovie()
+               //self.model.retriveLatestTvList()
+                
+                self.model.retrivePopularTVList()
+                self.model.retriveTvArrivingTodayList()
+                self.model.retriveTvOnAirList()
+                self.model.retriveTopRatedTVList()
+               
+               
             }
             
             

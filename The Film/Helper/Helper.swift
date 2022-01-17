@@ -19,7 +19,7 @@ class Helper {
         let convertDateFormatter = DateFormatter()
         convertDateFormatter.dateFormat = "MMM dd, yyyy"
 
-        return convertDateFormatter.string(from: oldDate!)
+        return convertDateFormatter.string(from: oldDate ?? Date())
    }
     
 }

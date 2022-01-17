@@ -37,8 +37,10 @@ struct HomeView: View {
     func selectedCategoery() -> AnyView {
         
         switch self.model.selectedCategoery {
-            case 0:
+        case 0:
             return AnyView(MovieView())
+        case 1:
+            return AnyView(TVShowView())
         default :
             return AnyView(Text("Selected categoery : \(model.selectedCategoery)"))
         }

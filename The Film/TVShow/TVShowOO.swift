@@ -11,19 +11,20 @@ import Foundation
 class TVShowOO: ObservableObject {
     
     @Published var pageIndex = 1
-    @Published var movieListArray: MovieListDataModel?
-    @Published var nowPlayingMovieList:[MovieDataModel]?
-    @Published var popularMovieList:[MovieDataModel]?
-    @Published var topRatedMovieList:[MovieDataModel]?
-    @Published var upCommingList:[MovieDataModel]?
-    private let homeAPIClient = MovieClient()
+    @Published var TvShowList:[TVShowDataModel]?
+    @Published var popularTVList:[TVShowDataModel]?
+    @Published var airingTodayTVList:[TVShowDataModel]?
+    @Published var topRatedTVList:[TVShowDataModel]?
+    @Published var latestTVList:[TVShowDataModel]?
+    @Published var onTVList:[TVShowDataModel]?
+    private let homeAPIClient = TVShowClient()
     
     
-    /// Retrive movies list
+    /// Retrive Latest TV list
     /// - Parameter pageIndex: page Index
-    func getUpCommingMovie() {
+    func retriveLatestTvList() {
         
-        homeAPIClient.retriveUpCommingMovieList(pageIndex: pageIndex) { (result) in
+        homeAPIClient.retriveLatestTvList(pageIndex: pageIndex) { (result) in
             
             switch result {
             case .offline:
@@ -32,10 +33,10 @@ class TVShowOO: ObservableObject {
                 
                 debugPrint(movieList)
                 
-                if self.upCommingList?.count ?? 0 > 0 {
-                    self.upCommingList?.append(contentsOf: movieList.results)
+                if self.latestTVList?.count ?? 0 > 0 {
+                    self.latestTVList?.append(contentsOf: movieList.results)
                 }else {
-                    self.upCommingList = movieList.results
+                    self.latestTVList = movieList.results
                 }
             case let .error(warning):
                 debugPrint(warning)
@@ -44,11 +45,11 @@ class TVShowOO: ObservableObject {
     }
     
     
-    /// Retrive movies list
+    /// Retrive top rated TV list
     /// - Parameter pageIndex: page Index
-    func getTopRatedMovie() {
+    func retriveTopRatedTVList() {
         
-        homeAPIClient.retriveTopRatedMovieList(pageIndex: pageIndex) { (result) in
+        homeAPIClient.retriveTopRatedTVList(pageIndex: pageIndex) { (result) in
             
             switch result {
             case .offline:
@@ -57,10 +58,10 @@ class TVShowOO: ObservableObject {
                 
                 debugPrint(movieList)
                 
-                if self.topRatedMovieList?.count ?? 0 > 0 {
-                    self.topRatedMovieList?.append(contentsOf: movieList.results)
+                if self.topRatedTVList?.count ?? 0 > 0 {
+                    self.topRatedTVList?.append(contentsOf: movieList.results)
                 }else {
-                    self.topRatedMovieList = movieList.results
+                    self.topRatedTVList = movieList.results
                 }
             case let .error(warning):
                 debugPrint(warning)
@@ -68,11 +69,11 @@ class TVShowOO: ObservableObject {
         }
     }
     
-    /// Retrive movies list
+    /// Retrive popular TV list
     /// - Parameter pageIndex: page Index
-    func getNowPlayingMovie() {
+    func retrivePopularTVList() {
         
-        homeAPIClient.retriveNowPlayingMovieList(pageIndex: pageIndex) { (result) in
+        homeAPIClient.retrivePopularTVList(pageIndex: pageIndex) { (result) in
             
             switch result {
             case .offline:
@@ -81,10 +82,10 @@ class TVShowOO: ObservableObject {
                 
                 debugPrint(movieList)
                 
-                if self.nowPlayingMovieList?.count ?? 0 > 0 {
-                    self.nowPlayingMovieList?.append(contentsOf: movieList.results)
+                if self.popularTVList?.count ?? 0 > 0 {
+                    self.popularTVList?.append(contentsOf: movieList.results)
                 }else {
-                    self.nowPlayingMovieList = movieList.results
+                    self.popularTVList = movieList.results
                 }
             case let .error(warning):
                 debugPrint(warning)
@@ -93,12 +94,11 @@ class TVShowOO: ObservableObject {
     }
     
     
-    /// Retrive Poplar movies list
+    /// Retrive TV arriving today list
     /// - Parameter pageIndex: page Index
-    
-    func getPopularMovie() {
+    func retriveTvArrivingTodayList() {
         
-        homeAPIClient.retrivePopularMovieList(pageIndex: pageIndex) { (result) in
+        homeAPIClient.retriveTvArrivingTodayList(pageIndex: pageIndex) { (result) in
             
             switch result {
             case .offline:
@@ -107,14 +107,41 @@ class TVShowOO: ObservableObject {
                 
                 debugPrint(movieList)
                 
-                if self.popularMovieList?.count ?? 0 > 0 {
-                    self.popularMovieList?.append(contentsOf: movieList.results)
+                if self.airingTodayTVList?.count ?? 0 > 0 {
+                    self.airingTodayTVList?.append(contentsOf: movieList.results)
                 }else {
-                    self.popularMovieList = movieList.results
+                    self.airingTodayTVList = movieList.results
                 }
             case let .error(warning):
                 debugPrint(warning)
             }
         }
     }
+    
+    /// Retrive TV On Air list
+    /// - Parameter pageIndex: page Index
+    func retriveTvOnAirList() {
+        
+        homeAPIClient.retriveTvOnAirList(pageIndex: pageIndex) { (result) in
+            
+            switch result {
+            case .offline:
+                debugPrint("Offline")
+            case let .success(movieList):
+                
+                debugPrint(movieList)
+                
+                if self.onTVList?.count ?? 0 > 0 {
+                    self.onTVList?.append(contentsOf: movieList.results)
+                }else {
+                    self.onTVList = movieList.results
+                }
+            case let .error(warning):
+                debugPrint(warning)
+            }
+        }
+    }
+    
+
+    
 }
