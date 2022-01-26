@@ -70,20 +70,10 @@ struct IDBMCellView: View {
                                                 Text("Your rating")
                                             }
                                         }
-
-                                        
-                                        
                                     }.frame(width: 35, height: 35, alignment: .center)
                                     .offset(x: -5, y: 3)
-                                
                                 // Draw Rating circel
-                                  
-                               
                             }
-                            
-                            
-
-                            
                             Spacer()
                             HStack{
                                 Spacer()
@@ -116,7 +106,6 @@ struct IDBMCellView: View {
     }
     
     var getImageUrl:(MovieDataModel?) -> String = {
-        print(imageBaseUrl + "w342" + ($0?.poster_path ?? ""))
         return imageBaseUrl + "w342" + ($0?.poster_path ?? "")
     }
 }

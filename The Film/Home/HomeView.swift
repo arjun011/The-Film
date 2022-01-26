@@ -42,7 +42,7 @@ struct HomeView: View {
         case 1:
             return AnyView(TVShowView())
         default :
-            return AnyView(Text("Selected categoery : \(model.selectedCategoery)"))
+            return AnyView(PeopleListView())
         }
         
     }

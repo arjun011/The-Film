@@ -1,164 +1,887 @@
-[
-  {
-    "id": 1,
-    "firstName": "Nikola",
-    "lastName": "Tesla",
-    "imageName": "nikola_tesla"
-  },
-  {
-    "id": 2,
-    "firstName": "Benjamin",
-    "lastName": "Franklin",
-    "imageName": "benjamin_franklin"
-  },
-  {
-    "id": 3,
-    "firstName": "Henry",
-    "lastName": "Ford",
-    "imageName": "henry_ford"
-  },
-  {
-    "id": 4,
-    "firstName": "Charles",
-    "lastName": "Babbage",
-    "imageName": "charles_babbage"
-  },
-  {
-    "id": 5,
-    "firstName": "Alexander",
-    "lastName": "Bell",
-    "imageName": "alexander_bell"
-  },
-  {
-    "id": 6,
-    "firstName": "Thomas",
-    "lastName": "Edison",
-    "imageName": "thomas_edison"
-  },
-  {
-    "id": 7,
-    "firstName": "Albert",
-    "lastName": "Einstein",
-    "imageName": "albert_einstein"
-  },
-  {
-    "id": 8,
-    "firstName": "Marie",
-    "lastName": "Curie",
-    "imageName": "marie_curie"
-  },
-  {
-    "id": 9,
-    "firstName": "Leonardo",
-    "lastName": "Da Vinci",
-    "imageName": "leonardo_da_vinci"
-  },
-  {
-    "id": 10,
-    "firstName": "Nikola",
-    "lastName": "Tesla",
-    "imageName": "nikola_tesla"
-  },
-  {
-    "id": 11,
-    "firstName": "Benjamin",
-    "lastName": "Franklin",
-    "imageName": "benjamin_franklin"
-  },
-  {
-    "id": 12,
-    "firstName": "Henry",
-    "lastName": "Ford",
-    "imageName": "henry_ford"
-  },
-  {
-    "id": 13,
-    "firstName": "Charles",
-    "lastName": "Babbage",
-    "imageName": "charles_babbage"
-  },
-  {
-    "id": 14,
-    "firstName": "Alexander",
-    "lastName": "Bell",
-    "imageName": "alexander_bell"
-  },
-  {
-    "id": 15,
-    "firstName": "Thomas",
-    "lastName": "Edison",
-    "imageName": "thomas_edison"
-  },
-  {
-    "id": 16,
-    "firstName": "Albert",
-    "lastName": "Einstein",
-    "imageName": "albert_einstein"
-  },
-  {
-    "id": 17,
-    "firstName": "Marie",
-    "lastName": "Curie",
-    "imageName": "marie_curie"
-  },
-  {
-    "id": 18,
-    "firstName": "Leonardo",
-    "lastName": "Da Vinci",
-    "imageName": "leonardo_da_vinci"
-  },
-  {
-    "id": 19,
-    "firstName": "Nikola",
-    "lastName": "Tesla",
-    "imageName": "nikola_tesla"
-  },
-  {
-    "id": 20,
-    "firstName": "Benjamin",
-    "lastName": "Franklin",
-    "imageName": "benjamin_franklin"
-  },
-  {
-    "id": 21,
-    "firstName": "Henry",
-    "lastName": "Ford",
-    "imageName": "henry_ford"
-  },
-  {
-    "id": 22,
-    "firstName": "Charles",
-    "lastName": "Babbage",
-    "imageName": "charles_babbage"
-  },
-  {
-    "id": 23,
-    "firstName": "Alexander",
-    "lastName": "Bell",
-    "imageName": "alexander_bell"
-  },
-  {
-    "id": 24,
-    "firstName": "Thomas",
-    "lastName": "Edison",
-    "imageName": "thomas_edison"
-  },
-  {
-    "id": 25,
-    "firstName": "Albert",
-    "lastName": "Einstein",
-    "imageName": "albert_einstein"
-  },
-  {
-    "id": 26,
-    "firstName": "Marie",
-    "lastName": "Curie",
-    "imageName": "marie_curie"
-  },
-  {
-    "id": 27,
-    "firstName": "Leonardo",
-    "lastName": "Da Vinci",
-    "imageName": "leonardo_da_vinci"
-  }
-]
+{
+    "adult": false,
+    "also_known_as": [
+        "Ana Celia de Armas",
+        "Ana Celia de Armas Caso",
+        "아나 디 아르마스",
+        "Ана де Армас",
+        "Άνα ντε Άρμας",
+        "安娜·德·阿玛斯",
+        "アナ・デ・アルマス"
+    ],
+    "biography": "Ana de Armas was born in Cuba on April 30, 1988. At the age of 14, she began her studies at the National Theatre School of Havana, where she graduated after 4 years. She made her film debut with Una rosa de Francia (2006), which was directed by Manuel Gutiérrez Aragón. In 2006 she moved to Spain where she continued her film career, and started doing television. She currently lives between Madrid and Barcelona. Ana is known for her roles in Blade Runner 2049 (2017), Knives Out (2019), and No Time to Die (2021).",
+    "birthday": "1988-04-30",
+    "deathday": null,
+    "gender": 1,
+    "homepage": null,
+    "id": 224513,
+    "imdb_id": "nm1869101",
+    "known_for_department": "Acting",
+    "name": "Ana de Armas",
+    "place_of_birth": "Santa Cruz del Norte, Cuba",
+    "popularity": 109.17,
+    "profile_path": "/14uxt0jH28J9zn4vNQNTae3Bmr7.jpg",
+    "combined_credits": {
+        "cast": [
+            {
+                "adult": false,
+                "backdrop_path": null,
+                "genre_ids": [
+                    28,
+                    27,
+                    53
+                ],
+                "id": 80279,
+                "original_language": "es",
+                "original_title": "El callejón",
+                "overview": "A serial killer traps and taunts a young dancer inside a laundromat that located down an isolated alley.",
+                "poster_path": "/57ZbYBtXomPjqv3fYmdIu7Fh4GD.jpg",
+                "release_date": "2011-10-14",
+                "title": "Blind Alley",
+                "video": false,
+                "vote_average": 5.2,
+                "vote_count": 25,
+                "popularity": 7.319,
+                "character": "Rosa / Laura",
+                "credit_id": "52fe47b39251416c91072e75",
+                "order": 0,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": "/edCpfNlCVKNb7YN22vtdK7TBItV.jpg",
+                "genre_ids": [
+                    18
+                ],
+                "id": 522912,
+                "original_language": "en",
+                "original_title": "Corazón",
+                "overview": "Elena Ramirez  is a disadvantaged prostitute who learns that she has a life threatening medical condition, and must make attempts to earn a visa in order to gain access to the necessary treatment.",
+                "poster_path": "/52yseaQOdQilwkPvdrzXWHv8WF6.jpg",
+                "release_date": "2018-04-04",
+                "title": "Corazón",
+                "video": false,
+                "vote_average": 7.7,
+                "vote_count": 3,
+                "popularity": 1.4,
+                "character": "Elena Ramirez",
+                "credit_id": "5af0ddfc0e0a26444f000107",
+                "order": 0,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": null,
+                "genre_ids": [
+                    18
+                ],
+                "id": 301502,
+                "original_language": "en",
+                "original_title": "Blonde",
+                "overview": "A chronicle of the inner life of Marilyn Monroe.",
+                "poster_path": "/uzA58OOCwAdbKl4P9r1odTfGUwZ.jpg",
+                "release_date": "",
+                "title": "Blonde",
+                "video": false,
+                "vote_average": 0.0,
+                "vote_count": 0,
+                "popularity": 4.031,
+                "character": "Norma Jeane Mortenson / Marilyn Monroe",
+                "credit_id": "5c8aeef6c3a36864610eb5b2",
+                "order": 0,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": null,
+                "genre_ids": [
+                    28,
+                    80
+                ],
+                "vote_count": 0,
+                "original_language": "en",
+                "original_title": "Ballerina",
+                "poster_path": null,
+                "title": "Ballerina",
+                "video": false,
+                "vote_average": 0.0,
+                "id": 541671,
+                "overview": "A young female assassin seeks revenge against the people who killed her family.",
+                "popularity": 1.34,
+                "character": "",
+                "credit_id": "617b2f9ed6dbba0091eb4e9e",
+                "order": 0,
+                "media_type": "movie"
+            },
+            {
+                "overview": "A youth group is preparing for what will be the summer of their life, including secrets, lies, sex, confusion, evenings and holidays.",
+                "release_date": "2009-03-27",
+                "adult": false,
+                "backdrop_path": "/pv82OBJIF3v5inCkpxfb2XZFYta.jpg",
+                "vote_count": 114,
+                "genre_ids": [
+                    35,
+                    18
+                ],
+                "original_title": "Mentiras y gordas",
+                "original_language": "es",
+                "id": 17899,
+                "poster_path": "/uOJEJFrb2DX4odPfvaTwS7edpbq.jpg",
+                "title": "Sex, Party and Lies",
+                "video": false,
+                "vote_average": 4.4,
+                "popularity": 52.418,
+                "character": "Carola",
+                "credit_id": "52fe47509251416c75094fa9",
+                "order": 1,
+                "media_type": "movie"
+            },
+            {
+                "title": "Exposed",
+                "vote_average": 4.9,
+                "id": 331962,
+                "vote_count": 399,
+                "video": false,
+                "adult": false,
+                "backdrop_path": "/niGowOt2WKLTi1QaYcF4HDPprjj.jpg",
+                "release_date": "2016-01-22",
+                "genre_ids": [
+                    18,
+                    80,
+                    53,
+                    9648
+                ],
+                "overview": "After witnessing a miracle, a young Latina woman experiences strange things as a police detective searches for the truth behind his partner's death.",
+                "original_language": "en",
+                "original_title": "Exposed",
+                "poster_path": "/nM26QosEfgjEegONCiNNrYMBTxD.jpg",
+                "popularity": 22.958,
+                "character": "Isabel de La Cruz",
+                "credit_id": "550de875c3a3681db2006619",
+                "order": 1,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": "/3122AQUcnIZJIUxQ6W5evLf2qYr.jpg",
+                "genre_ids": [
+                    53,
+                    27
+                ],
+                "id": 362579,
+                "original_language": "es",
+                "original_title": "Anabel",
+                "overview": "Anabel and his two roommates are looking for someone to share the rent. They choose an older gentleman who gain their trust, but soon they discover a strange and disturbing presence.",
+                "poster_path": "/iWjPWr8USnYM8M9twN9C11kI1cB.jpg",
+                "release_date": "2015-10-11",
+                "title": "Anabel",
+                "video": false,
+                "vote_average": 6.3,
+                "vote_count": 28,
+                "popularity": 6.128,
+                "character": "Cris",
+                "credit_id": "5611a102c3a36868100133ef",
+                "order": 1,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": "/bKBhs1DbiUVMJgpaukOANEogC8D.jpg",
+                "genre_ids": [
+                    18,
+                    80
+                ],
+                "id": 176707,
+                "original_language": "es",
+                "original_title": "Una rosa de Francia",
+                "overview": "Simon transports illegal immigrants to New York, leaving them to their fate. He is discovered by the coastguard and Andrés, a young sailor, saves his life. When he falls for a young protegée of Simon conflict erupts.",
+                "poster_path": "/go7lx8kxxUcn3PBbFa7lOILeJV.jpg",
+                "release_date": "2006-02-03",
+                "title": "A Rose from France",
+                "video": false,
+                "vote_average": 4.2,
+                "vote_count": 5,
+                "popularity": 5.266,
+                "character": "Marie",
+                "credit_id": "52fe4d76c3a36847f82623a5",
+                "order": 1,
+                "media_type": "movie"
+            },
+            {
+                "id": 303431,
+                "video": false,
+                "vote_count": 0,
+                "vote_average": 0.0,
+                "title": "The Lost Eden",
+                "release_date": "2007-05-04",
+                "original_language": "es",
+                "original_title": "El edén perdido",
+                "genre_ids": [
+                    18,
+                    10770
+                ],
+                "backdrop_path": null,
+                "adult": false,
+                "overview": "",
+                "poster_path": null,
+                "popularity": 2.013,
+                "character": "Gloria",
+                "credit_id": "561f79ba92514171c5002dc9",
+                "order": 1,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": null,
+                "genre_ids": [
+                    18
+                ],
+                "id": 416185,
+                "original_language": "es",
+                "original_title": "Ánima",
+                "overview": "Julieta goes with her cello to a luthier workshop and, after observing handling their hands on instruments hypnotic damaged, it emerges in the sense that, like them, your soul asks also be healed.",
+                "poster_path": "/h0d2ysuJzdSE8AdhWnKmgnSq60X.jpg",
+                "release_date": "2011-07-08",
+                "title": "Ánima",
+                "video": false,
+                "vote_average": 4.0,
+                "vote_count": 1,
+                "popularity": 1.472,
+                "character": "Julieta",
+                "credit_id": "57db846392514169380035d0",
+                "order": 1,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": null,
+                "genre_ids": [
+                    10749,
+                    18
+                ],
+                "id": 416183,
+                "original_language": "es",
+                "original_title": "Y de postre, qué",
+                "overview": "A girl and a boy meet in a restaurant, they don't know each other, they start a meal that will make them go through all the phases of a love relationship.",
+                "poster_path": null,
+                "release_date": "2009-11-28",
+                "title": "And for Dessert, What?",
+                "video": false,
+                "vote_average": 0.0,
+                "vote_count": 0,
+                "popularity": 0.6,
+                "character": "Girl",
+                "credit_id": "57db81b1925141698d003401",
+                "order": 1,
+                "media_type": "movie"
+            },
+            {
+                "original_language": "en",
+                "original_title": "The Night Clerk",
+                "poster_path": "/hPWjid7yMatyIDHvku7lCMN7zSi.jpg",
+                "video": false,
+                "vote_average": 6.1,
+                "overview": "Hotel night clerk Bart Bromley is a highly intelligent young man on the Autism spectrum. When a woman is murdered during his shift, Bart becomes the prime suspect. As the police investigation closes in, Bart makes a personal connection with a beautiful guest named Andrea, but soon realises he must stop the real murderer before she becomes the next victim.",
+                "release_date": "2020-02-19",
+                "vote_count": 405,
+                "adult": false,
+                "backdrop_path": "/j438BBVpszrUPRX9GcIIdPXN84Q.jpg",
+                "title": "The Night Clerk",
+                "genre_ids": [
+                    53,
+                    80,
+                    18
+                ],
+                "id": 526007,
+                "popularity": 17.635,
+                "character": "Andrea Rivera",
+                "credit_id": "5b05e23b9251410d8c0039ca",
+                "order": 1,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": null,
+                "genre_ids": [
+                    53,
+                    10749,
+                    18
+                ],
+                "id": 619979,
+                "original_language": "en",
+                "original_title": "Deep Water",
+                "overview": "Vic and Melinda Van Allen are a couple in the small town of Little Wesley. Their loveless marriage is held together only by a precarious arrangement whereby, in order to avoid the messiness of divorce, Melinda is allowed to take any number of lovers as long as she does not desert her family.",
+                "poster_path": "/6se3mGzoKBCZvCkUvgVS3OGTIi4.jpg",
+                "release_date": "",
+                "title": "Deep Water",
+                "video": false,
+                "vote_average": 0.0,
+                "vote_count": 0,
+                "popularity": 5.026,
+                "character": "Melinda Van Allen",
+                "credit_id": "5d438d7fa9117f0017eee3fb",
+                "order": 1,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": "/iHsbud9p5xLrttxSrqWbLJNUT2P.jpg",
+                "genre_ids": [
+                    99
+                ],
+                "id": 677149,
+                "original_language": "en",
+                "original_title": "Making a Murder",
+                "overview": "Follows the making and production of Knives Out (2019)  Chapter 1 - Premeditation: Inspirations & Origin  Chapter 2 - Gathering the Suspects: The Cast  Chapter 3 - Dressed to Kill: Costume Design  Chapter 4 - The Scene of the Crime: Production & Design  Chapter 5 - Visual Clues: Cinematography  Chapter 6 - Putting the Clues Together: Editing  Chapter 7 - Music to Kill For: Music & Sound  Chapter 8 - Denouement: Whodunnit?",
+                "poster_path": "/9UCY48kzRJmEIi9iZHfDuOsw0Ke.jpg",
+                "release_date": "2020-02-07",
+                "title": "Making a Murder",
+                "video": false,
+                "vote_average": 8.8,
+                "vote_count": 5,
+                "popularity": 5.192,
+                "character": "Self",
+                "credit_id": "5e55979ca93d25001a4f7dcb",
+                "order": 1,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": null,
+                "genre_ids": [
+                    14
+                ],
+                "id": 795796,
+                "original_language": "en",
+                "original_title": "Entering Red",
+                "overview": "A woman walks into a bar and is sold the life of her dreams.",
+                "poster_path": "/5qlyedHZG4odZkBYaZNRXJMsEn0.jpg",
+                "release_date": "2019-02-05",
+                "title": "Entering Red",
+                "video": false,
+                "vote_average": 3.6,
+                "vote_count": 5,
+                "popularity": 0.682,
+                "character": "Ana",
+                "credit_id": "6033e0e020ecaf003c19994c",
+                "order": 1,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": "/jkkOvgxl4TPeGlh44ahGFGa7bdX.jpg",
+                "genre_ids": [
+                    18,
+                    10749
+                ],
+                "id": 258751,
+                "original_language": "es",
+                "original_title": "Por un puñado de besos",
+                "overview": "A girl. A boy. A love story. But also about dreams, fears, life, true love, friendship and how we deal with it. And a secret between them...",
+                "poster_path": "/7TRmf5vVKGTSVJ2uWrSlBUlP9iB.jpg",
+                "release_date": "2014-05-16",
+                "title": "For a Handful of Kisses",
+                "video": false,
+                "vote_average": 7.1,
+                "vote_count": 66,
+                "popularity": 6.421,
+                "character": "Sol",
+                "credit_id": "531daab492514177bc006c37",
+                "order": 2,
+                "media_type": "movie"
+            },
+            {
+                "genre_ids": [
+                    35,
+                    80,
+                    18
+                ],
+                "original_language": "en",
+                "original_title": "War Dogs",
+                "poster_path": "/mDcPRjZC1bb6LavFU3gwsWdVfCM.jpg",
+                "id": 308266,
+                "vote_average": 6.9,
+                "overview": "Based on the true story of two young men, David Packouz and Efraim Diveroli, who won a $300 million contract from the Pentagon to arm America's allies in Afghanistan.",
+                "release_date": "2016-08-17",
+                "vote_count": 3741,
+                "video": false,
+                "adult": false,
+                "backdrop_path": "/oNoprEND25zXR6Fns8cIZUkuoMc.jpg",
+                "title": "War Dogs",
+                "popularity": 51.684,
+                "character": "Iz",
+                "credit_id": "551883e3c3a36862ff004c6e",
+                "order": 2,
+                "media_type": "movie"
+            },
+            {
+                "overview": "Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years.",
+                "release_date": "2017-10-04",
+                "adult": false,
+                "backdrop_path": "/sAtoMqDVhNDQBc3QJL3RF6hlhGq.jpg",
+                "id": 335984,
+                "genre_ids": [
+                    878,
+                    18
+                ],
+                "vote_count": 10366,
+                "original_language": "en",
+                "original_title": "Blade Runner 2049",
+                "poster_path": "/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+                "title": "Blade Runner 2049",
+                "video": false,
+                "vote_average": 7.5,
+                "popularity": 83.329,
+                "character": "Joi",
+                "credit_id": "575d7fd6c3a368451600115b",
+                "order": 2,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": null,
+                "genre_ids": [],
+                "id": 416180,
+                "original_language": "es",
+                "original_title": "Perrito Chino",
+                "overview": "Rosa, a fifty-five year old single woman, and Sabina, a Cuban girl of 25, are neighbors and share a rooftop terrace in the city. Two uprooted women. They haven't met but they share a lot in common, both having left their home and past behind.",
+                "poster_path": null,
+                "release_date": "2012-01-01",
+                "title": "Perrito Chino",
+                "video": false,
+                "vote_average": 0.0,
+                "vote_count": 0,
+                "popularity": 0.883,
+                "character": "Sabina",
+                "credit_id": "57db803e925141693400340d",
+                "order": 2,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": "/3jKQt2uo8vDXvULMjEEnEzDtFWL.jpg",
+                "genre_ids": [
+                    53,
+                    28,
+                    9648
+                ],
+                "original_language": "en",
+                "original_title": "Overdrive",
+                "poster_path": "/a0hTRjis1cxwmjOuBaS7WdDG3dj.jpg",
+                "vote_count": 765,
+                "video": false,
+                "vote_average": 6.1,
+                "title": "Overdrive",
+                "overview": "Master car thieves square off against French gangsters in the South of France with money, women and lives all on the line.",
+                "id": 404733,
+                "release_date": "2017-06-29",
+                "popularity": 35.927,
+                "character": "Stephanie",
+                "credit_id": "577936bb92514130140002c1",
+                "order": 2,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": "/nJkp7hYKScmvQuqfptIIclFxZ94.jpg",
+                "genre_ids": [
+                    18,
+                    53,
+                    27
+                ],
+                "id": 263472,
+                "original_language": "en",
+                "original_title": "Knock Knock",
+                "overview": "When a devoted husband and father is left home alone for the weekend, two stranded young women unexpectedly knock on his door for help. What starts out as a kind gesture results in a dangerous seduction and a deadly game of cat and mouse.",
+                "poster_path": "/cUC4rUb1Cs2KMaZ6RD4uYUEEwls.jpg",
+                "release_date": "2015-06-26",
+                "title": "Knock Knock",
+                "video": false,
+                "vote_average": 5.3,
+                "vote_count": 2398,
+                "popularity": 76.428,
+                "character": "Bell",
+                "credit_id": "5342cb64c3a36814f9003b54",
+                "order": 2,
+                "media_type": "movie"
+            },
+            {
+                "original_language": "en",
+                "original_title": "Knives Out",
+                "poster_path": "/pThyQovXQrw2m0s9x82twj48Jq4.jpg",
+                "video": false,
+                "id": 546554,
+                "overview": "When renowned crime novelist Harlan Thrombey is found dead at his estate just after his 85th birthday, the inquisitive and debonair Detective Benoit Blanc is mysteriously enlisted to investigate. From Harlan's dysfunctional family to his devoted staff, Blanc sifts through a web of red herrings and self-serving lies to uncover the truth behind Harlan's untimely death.",
+                "release_date": "2019-11-27",
+                "vote_count": 8381,
+                "vote_average": 7.9,
+                "adult": false,
+                "backdrop_path": "/4HWAQu28e2yaWrtupFPGFkdNU7V.jpg",
+                "title": "Knives Out",
+                "genre_ids": [
+                    35,
+                    18,
+                    80,
+                    9648
+                ],
+                "popularity": 57.006,
+                "character": "Marta Cabrera",
+                "credit_id": "5bc9fa6792514156330104c6",
+                "order": 2,
+                "media_type": "movie"
+            },
+            {
+                "vote_count": 255,
+                "overview": "A sweeping drama set in the chaotic aftermath of the US invasion of Iraq, where the life of top UN diplomat Brazilian Sérgio Vieira de Mello hangs in the balance during the most treacherous mission of his career.",
+                "release_date": "2020-01-28",
+                "title": "Sergio",
+                "id": 653744,
+                "adult": false,
+                "backdrop_path": "/gLYcFoNfmvoJpM327P3pQygFVsq.jpg",
+                "original_title": "Sergio",
+                "genre_ids": [
+                    18
+                ],
+                "video": false,
+                "original_language": "en",
+                "vote_average": 6.7,
+                "poster_path": "/tABtj9BwYVDCM69h7AK38MDgw64.jpg",
+                "popularity": 15.388,
+                "character": "Carolina",
+                "credit_id": "5de90d917646fd00159b70d6",
+                "order": 2,
+                "media_type": "movie"
+            },
+            {
+                "vote_average": 0.0,
+                "overview": "Gentry is on a mission across Europe to rescue his handler and his family from Lloyd, a former cohort of Gentry's at the CIA. Lloyd wants Gentry terminated in order to shepherd a billion-dollar oil deal in Nigeria, where the president of that country wants Gentry dead for the assassination of his brother.",
+                "adult": false,
+                "backdrop_path": null,
+                "vote_count": 0,
+                "genre_ids": [
+                    28,
+                    53
+                ],
+                "video": false,
+                "original_language": "en",
+                "original_title": "The Gray Man",
+                "poster_path": "/oLjbO36HtCCxAZKfb0f0WqWYIGd.jpg",
+                "title": "The Gray Man",
+                "id": 725201,
+                "popularity": 4.194,
+                "character": "Dani Miranda",
+                "credit_id": "5fd3c663b7b69d003cf3064c",
+                "order": 2,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": "/qxTbEyIOhWlHU9bbNFRQWFwQoh.jpg",
+                "genre_ids": [
+                    18,
+                    878
+                ],
+                "id": 73610,
+                "original_language": "es",
+                "original_title": "Madrigal",
+                "overview": "Javier is an actor with an affinity for writing. When he begins his love story with Luisita, he does not know where the truth begins and ends. Fifteen years later he has converted his story into literature that relates his tragic love story in a creative way.",
+                "poster_path": null,
+                "release_date": "2007-03-30",
+                "title": "Madrigal",
+                "video": false,
+                "vote_average": 4.8,
+                "vote_count": 4,
+                "popularity": 2.741,
+                "character": "Stella Maris",
+                "credit_id": "55ed8eee92514106d600d62e",
+                "order": 3,
+                "media_type": "movie"
+            },
+            {
+                "backdrop_path": "/98sIdYdvnh68Va1JLjcyAuFGZO5.jpg",
+                "genre_ids": [
+                    18,
+                    80,
+                    53
+                ],
+                "original_language": "en",
+                "original_title": "The Informer",
+                "poster_path": "/pbGveUC8mk0QRkdXpERPLbMFnrg.jpg",
+                "video": false,
+                "vote_average": 6.5,
+                "vote_count": 545,
+                "overview": "In New York, former convict Pete Koslow, related to the Polish mafia, must deal with both Klimek the General, his ruthless boss, and the twisted ambitions of two federal agents, as he tries to survive and protect the lives of his loved ones.",
+                "id": 466081,
+                "title": "The Informer",
+                "release_date": "2019-08-30",
+                "adult": false,
+                "popularity": 23.557,
+                "character": "Sofia",
+                "credit_id": "59664cdac3a36828fc110273",
+                "order": 3,
+                "media_type": "movie"
+            },
+            {
+                "original_language": "en",
+                "original_title": "Wasp Network",
+                "id": 451184,
+                "video": false,
+                "vote_average": 6.2,
+                "overview": "Havana, Cuba, 1990. René González, an airplane pilot, unexpectedly flees the country, leaving behind his wife Olga and his daughter Irma, and begins a new life in Miami, where he becomes a member of an anti-Castro organization.",
+                "release_date": "2019-09-09",
+                "vote_count": 258,
+                "poster_path": "/fzjbeyEwmlpxu5CMzmFz8IDVELm.jpg",
+                "adult": false,
+                "backdrop_path": "/hwxAXctrOLxQDKEuBNB41JrP5v9.jpg",
+                "title": "Wasp Network",
+                "genre_ids": [
+                    18,
+                    36,
+                    53
+                ],
+                "popularity": 11.885,
+                "character": "Ana Margarita",
+                "credit_id": "5c61e2ad925141250afb0808",
+                "order": 3,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": null,
+                "genre_ids": [
+                    12,
+                    28,
+                    10749
+                ],
+                "id": 868759,
+                "original_language": "en",
+                "original_title": "Ghosted",
+                "overview": "Plot TBA. Described as a high-concept romantic action adventure in the vein of \"Romancing the Stone\" (1984).",
+                "poster_path": null,
+                "release_date": "",
+                "title": "Ghosted",
+                "video": false,
+                "vote_average": 0.0,
+                "vote_count": 0,
+                "popularity": 1.364,
+                "character": "",
+                "credit_id": "61aa4453180dea006400ad88",
+                "order": 3,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": "/lVDDXGuuu2WiqQCyXMsLe513FNP.jpg",
+                "genre_ids": [
+                    18
+                ],
+                "original_language": "en",
+                "original_title": "Hands of Stone",
+                "poster_path": "/rpAYkkc7ltnxnMXOZLPuI9A6cuB.jpg",
+                "vote_count": 283,
+                "video": false,
+                "vote_average": 6.3,
+                "title": "Hands of Stone",
+                "overview": "The legendary Roberto Duran and his equally legendary trainer Ray Arcel change each other's lives.",
+                "release_date": "2016-08-26",
+                "id": 184341,
+                "popularity": 22.874,
+                "character": "Felicidad Iglesias",
+                "credit_id": "5717c2f2c3a3687b8c00192a",
+                "order": 9,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": "/n8xKQ9pO5MRnchMIX6ObM0MsuNT.jpg",
+                "genre_ids": [
+                    35,
+                    27
+                ],
+                "id": 214632,
+                "original_language": "es",
+                "original_title": "Faraday",
+                "overview": "Faraday is a weirdo telepath who is starting to lose his faith in the paranormal. His girlfriend, Diana, is a blogger whose highest aspiration in life is to be famous on the internet. When they decide to move in together they opt for a suspiciously cheap flat which turns out to be haunted.",
+                "poster_path": "/3NfYnCSRqUG5a9OjDm9pagSjLSm.jpg",
+                "release_date": "2013-10-12",
+                "title": "Faraday",
+                "video": false,
+                "vote_average": 5.8,
+                "vote_count": 10,
+                "popularity": 0.6,
+                "character": "Inma Murga",
+                "credit_id": "52fe4de5c3a368484e2038df",
+                "order": 10,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": "/r2GAjd4rNOHJh6i6Y0FntmYuPQW.jpg",
+                "id": 370172,
+                "genre_ids": [
+                    12,
+                    28,
+                    53
+                ],
+                "original_language": "en",
+                "original_title": "No Time to Die",
+                "poster_path": "/iUgygt3fscRoKWCV1d0C7FbM9TP.jpg",
+                "video": false,
+                "vote_average": 7.5,
+                "title": "No Time to Die",
+                "overview": "Bond has left active service and is enjoying a tranquil life in Jamaica. His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
+                "release_date": "2021-09-29",
+                "vote_count": 3264,
+                "popularity": 704.468,
+                "character": "Paloma",
+                "credit_id": "5cc1a7e2c3a368776c8d2cab",
+                "order": 10,
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": "/8Bcm0qBnS6yjwTFad8eI6thzRub.jpg",
+                "genre_ids": [
+                    99
+                ],
+                "id": 869250,
+                "original_language": "en",
+                "original_title": "Being James Bond",
+                "overview": "Daniel Craig candidly reflects on his 15 year adventure as James Bond. Including never-before-seen archival footage from Casino Royale to the upcoming 25th film No Time To Die, Craig shares his personal memories in conversation with 007 producers, Michael G Wilson and Barbara Broccoli.",
+                "poster_path": "/jLaAbwPDzHNbJfZ0Xj0CkeM56CO.jpg",
+                "release_date": "2021-08-29",
+                "title": "Being James Bond",
+                "video": false,
+                "vote_average": 7.9,
+                "vote_count": 44,
+                "popularity": 12.312,
+                "character": "(archive footage)",
+                "credit_id": "6197961971458f0042950774",
+                "order": 20,
+                "media_type": "movie"
+            },
+            {
+                "vote_average": 8.2,
+                "overview": "El Internado Laguna Negra was a Spanish television drama-thriller focusing on the students of a fictional boarding school in a forest, where teenagers are sent by their parents to study. The boarding school is situated in a forest far from the city, on the outskirts on which macabre events occur. The series debut on 24 May 2007, and is a production of Antena 3. Although the show is recorded and produced in HD, it is only broadcast in SD. However, an HD Blu-ray Disc release has been announced.",
+                "name": "The Boarding School",
+                "original_name": "El internado",
+                "id": 4743,
+                "genre_ids": [
+                    18,
+                    10759
+                ],
+                "first_air_date": "2007-05-24",
+                "original_language": "es",
+                "vote_count": 363,
+                "poster_path": "/9BVy7ZtN1WfQWJ0UbHCEE8o5e5f.jpg",
+                "backdrop_path": "/pJxAhqarpzbtwMVSFBA7YKeQY2z.jpg",
+                "origin_country": [
+                    "ES"
+                ],
+                "popularity": 162.251,
+                "character": "Carolina Leal",
+                "credit_id": "550dda77c3a3681db2006161",
+                "episode_count": 56,
+                "media_type": "tv"
+            },
+            {
+                "overview": "",
+                "vote_count": 4,
+                "backdrop_path": "/c4oeLfhzr498Dpw1VHHXI8dF2P2.jpg",
+                "id": 45410,
+                "genre_ids": [
+                    10759
+                ],
+                "origin_country": [
+                    "ES"
+                ],
+                "original_language": "es",
+                "vote_average": 5.5,
+                "poster_path": "/5xaIo1Zae829tdCPPiQvs1bIwfd.jpg",
+                "first_air_date": "2010-10-25",
+                "original_name": "Hispania, la leyenda",
+                "name": "Hispania, la leyenda",
+                "popularity": 14.211,
+                "character": "Nerea",
+                "credit_id": "55f072d3c3a3684c8800078f",
+                "episode_count": 20,
+                "media_type": "tv"
+            },
+            {
+                "backdrop_path": "/6jGVOu5NvnmSKh28ByWAJrTOEH2.jpg",
+                "vote_count": 169,
+                "genre_ids": [
+                    35,
+                    10767
+                ],
+                "name": "The Tonight Show Starring Jimmy Fallon",
+                "id": 59941,
+                "original_language": "en",
+                "poster_path": "/if7ECoH4xaYw5S8gomNIEmtwTxP.jpg",
+                "overview": "After Jay Leno's second retirement from the program, Jimmy Fallon stepped in as his permanent replacement. After 42 years in Los Angeles the program was brought back to New York.",
+                "first_air_date": "2014-02-17",
+                "vote_average": 6.1,
+                "original_name": "The Tonight Show Starring Jimmy Fallon",
+                "origin_country": [
+                    "US"
+                ],
+                "popularity": 385.23,
+                "character": "Self - Guest",
+                "credit_id": "6161d76c8e2ba6008bf58c06",
+                "episode_count": 1,
+                "media_type": "tv"
+            }
+        ],
+        "crew": [
+            {
+                "original_title": "Ficção De Fã - O Filme",
+                "id": 900727,
+                "title": "Ficção De Fã - O Filme",
+                "video": false,
+                "vote_average": 8.6,
+                "overview": "",
+                "release_date": "2021-11-18",
+                "adult": false,
+                "backdrop_path": "/jeAhivTdN2F35KPuLrAV01iuDkb.jpg",
+                "vote_count": 5,
+                "genre_ids": [
+                    18,
+                    16,
+                    878,
+                    12
+                ],
+                "poster_path": "/2JkUDywAkCvwpAytsPxBULAdvpM.jpg",
+                "original_language": "pt",
+                "popularity": 1.4,
+                "credit_id": "61a0e45a7f1d830044a3054b",
+                "department": "Art",
+                "job": "First Assistant Art Direction",
+                "media_type": "movie"
+            },
+            {
+                "adult": false,
+                "backdrop_path": null,
+                "genre_ids": [
+                    12,
+                    28,
+                    10749
+                ],
+                "id": 868759,
+                "original_language": "en",
+                "original_title": "Ghosted",
+                "overview": "Plot TBA. Described as a high-concept romantic action adventure in the vein of \"Romancing the Stone\" (1984).",
+                "poster_path": null,
+                "release_date": "",
+                "title": "Ghosted",
+                "video": false,
+                "vote_average": 0.0,
+                "vote_count": 0,
+                "popularity": 1.364,
+                "credit_id": "61aa9b2b0f2ae1001bb5314c",
+                "department": "Production",
+                "job": "Executive Producer",
+                "media_type": "movie"
+            }
+        ]
+    }
+}

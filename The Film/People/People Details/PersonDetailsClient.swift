@@ -1,14 +1,13 @@
 //
-//  PopularPeopledetailsClient.swift
+//  PersonDetailsClient.swift
 //  The Film
 //
-//  Created by Arjun C on 19/05/20.
-//  Copyright © 2020 Arjun C. All rights reserved.
+//  Created by Arjun on 25/01/22.
+//  Copyright © 2022 Arjun C. All rights reserved.
 //
 
 import Foundation
-class PopularPeopledetailsClient {
-    
+class PersonDetailsClient {
     
     /// Retrive Popular persons details
     /// - Parameters:
@@ -31,7 +30,4 @@ class PopularPeopledetailsClient {
             response(ResponseManager.error(error?.localizedDescription ?? "UnKnown"))
         }
     }
-    
-    
-
 }

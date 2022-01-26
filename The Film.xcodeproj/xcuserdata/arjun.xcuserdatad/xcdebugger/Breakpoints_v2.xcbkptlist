@@ -110,8 +110,8 @@
             filePath = "The Film/People Details/PopularPeopledetailsClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "retrivePopularPeopleDetails(userId:response:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -295,17 +295,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D7D15E96-F2F9-4C16-9FA0-BBD495F0AF18"
+            uuid = "644A5306-8AA4-45B8-88CD-BF6FECB46419"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "The Film/TVShow/TVShowClient.swift"
+            filePath = "The Film/People Details/PopularPeopledetailsSwiftUIView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "retriveLatestTvList(pageIndex:response:)"
-            landmarkType = "7">
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

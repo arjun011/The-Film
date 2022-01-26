@@ -24,7 +24,8 @@ struct TVShowView: View {
                     Button {
                         
                     } label: {
-                        Text("Load more")
+                        Image(systemName: "arrow.right")
+                            .tint(.black)
                     }
                 }.padding(.horizontal)
                 .font(.system(size: 15, weight: .bold))
@@ -38,7 +39,8 @@ struct TVShowView: View {
                     Button {
                         
                     } label: {
-                        Text("Load more")
+                        Image(systemName: "arrow.right")
+                            .tint(.black)
                     }
                 }.padding(.horizontal)
                 .font(.system(size: 15, weight: .bold))
@@ -53,7 +55,8 @@ struct TVShowView: View {
                     Button {
                         
                     } label: {
-                        Text("Load more")
+                        Image(systemName: "arrow.right")
+                            .tint(.black)
                     }
                 }.padding(.horizontal)
                 .font(.system(size: 15, weight: .bold))
@@ -69,7 +72,8 @@ struct TVShowView: View {
                         Button {
                             
                         } label: {
-                            Text("Load more")
+                            Image(systemName: "arrow.right")
+                                .tint(.black)
                         }
                     }.padding(.horizontal)
                         .font(.system(size: 15, weight: .bold))

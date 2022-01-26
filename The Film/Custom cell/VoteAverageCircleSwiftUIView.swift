@@ -10,9 +10,8 @@ import SwiftUI
 
 struct VoteAverageCircleSwiftUIView: View {
     var voteAverage:Float?
-    var voteAverageNumber:CGFloat? {
-        return CGFloat((voteAverage ?? 1.0) / 10)
-    }
+    @State var voteAverageNumber:CGFloat?
+    
     var circleFrame:(width: CGFloat, height: CGFloat)
     
     private var fillColor: Color {
@@ -33,16 +32,20 @@ struct VoteAverageCircleSwiftUIView: View {
                 .frame(width: (self.circleFrame.width - 4),height: (self.circleFrame.height - 4))
             
             Circle()
-                .trim(from: 0, to: voteAverageNumber ?? 0.1)
+                .trim(from: 0, to: voteAverageNumber ?? 0.0)
                 .stroke(fillColor ,style: StrokeStyle(lineWidth: 3, lineCap: CGLineCap.round))
                 .frame(width: self.circleFrame.width ,height: self.circleFrame.height)
                 .rotationEffect(.degrees(-90))
                 .overlay(
-                    Text(String(format: "%.1f", voteAverageNumber ?? 0.1))
+                    Text(String(format: "%.1f", voteAverageNumber ?? 0.0))
                         .font(.system(size: 11))
                         .fontWeight(.medium)
                         .foregroundColor(.white)
             )
+        }.onAppear {
+            withAnimation(.linear.delay(0.5)) {
+                voteAverageNumber = CGFloat((voteAverage ?? 1.0) / 10)
+            }
         }
     }
 }

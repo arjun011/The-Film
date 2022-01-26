@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-import QGrid
+//import QGrid
 import SDWebImageSwiftUI
 struct MoviesListSwiftUIView: View {
    @ObservedObject private var movieModel = MovieModel()
@@ -16,13 +16,13 @@ struct MoviesListSwiftUIView: View {
             Color.black
             VStack {
                 if movieModel.movieListArray?.results.count ?? 0 > 0 {
-                    QGrid(movieModel.movieListArray?.results ?? [MovieDataModel](), columns: 2, columnsInLandscape: 3, vSpacing: 5, hSpacing: 5, vPadding: 0, hPadding: 5, isScrollable: true, showScrollIndicators: false) { movie in
-                      
-                        
-                        NavigationLink(destination: MovieDetailsSwiftUIView(movieID: movie.id)) {
-                            MovieCellSwiftUIView(movieObject: movie)
-                        }
-                    }
+//                    QGrid(movieModel.movieListArray?.results ?? [MovieDataModel](), columns: 2, columnsInLandscape: 3, vSpacing: 5, hSpacing: 5, vPadding: 0, hPadding: 5, isScrollable: true, showScrollIndicators: false) { movie in
+//                      
+//                        
+//                        NavigationLink(destination: MovieDetailsSwiftUIView(movieID: movie.id)) {
+//                            MovieCellSwiftUIView(movieObject: movie)
+//                        }
+//                    }
                     Button(action: {
                         self.movieModel.pageIndex = self.movieModel.pageIndex + 1
                         self.movieModel.getMoviesList()

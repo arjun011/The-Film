@@ -22,7 +22,7 @@ struct PopularPersonDetailsDataModel:Codable {
 }
 
 struct combined_creditsDataModel:Codable {
-    var cast:[combined_creditsCastDataModel] = []
+    var cast:[MovieDataModel]?
 }
 
 

@@ -65,14 +65,19 @@
 		DC898B0824617450002DED05 /* FavTabSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC898B0724617450002DED05 /* FavTabSwiftUIView.swift */; };
 		DC898B0A2461746F002DED05 /* MyStufTabSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC898B092461746F002DED05 /* MyStufTabSwiftUIView.swift */; };
 		DC898B0D2461864E002DED05 /* LoadingSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC898B0C2461864E002DED05 /* LoadingSwiftUIView.swift */; };
+		DC91383F27A048C500010DA4 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91383E27A048C500010DA4 /* PersonDetailsView.swift */; };
+		DC91384127A048D700010DA4 /* PersonDetailsOO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91384027A048D700010DA4 /* PersonDetailsOO.swift */; };
+		DC91384327A048E500010DA4 /* PersonDetailsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91384227A048E500010DA4 /* PersonDetailsClient.swift */; };
 		DC936154246D45E8005AE79A /* MovieDetailsHeaderSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC936153246D45E8005AE79A /* MovieDetailsHeaderSwiftUIView.swift */; };
+		DC9914D6279856F800B39BE6 /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9914D5279856F800B39BE6 /* PeopleListView.swift */; };
+		DCADC6C727A1046700D10A6B /* TitleSubTitleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADC6C627A1046700D10A6B /* TitleSubTitleCellView.swift */; };
+		DCADC6C927A1083D00D10A6B /* HCombineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCADC6C827A1083D00D10A6B /* HCombineListView.swift */; };
 		DCB85E5B2462819F002BFF50 /* MoviesListSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB85E5A2462819F002BFF50 /* MoviesListSwiftUIView.swift */; };
 		DCB85E5D246281AF002BFF50 /* TVShowListSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB85E5C246281AF002BFF50 /* TVShowListSwiftUIView.swift */; };
 		DCB85E63246288E8002BFF50 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB85E62246288E8002BFF50 /* APIManager.swift */; };
 		DCB85E65246288F8002BFF50 /* ClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB85E64246288F8002BFF50 /* ClientManager.swift */; };
 		DCB85E672462A31A002BFF50 /* MovieListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB85E662462A31A002BFF50 /* MovieListDataModel.swift */; };
 		DCB85E6A2462A6C0002BFF50 /* HomeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB85E692462A6C0002BFF50 /* HomeClient.swift */; };
-		DCB85E6D2462B9D0002BFF50 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = DCB85E6C2462B9D0002BFF50 /* QGrid */; };
 		DCB85E702462BD35002BFF50 /* MovieCellSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB85E6F2462BD35002BFF50 /* MovieCellSwiftUIView.swift */; };
 		DCB85E722462CE20002BFF50 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = DCB85E712462CE20002BFF50 /* people.json */; };
 		DCC9B0C82473B0C30025D2DB /* PopularPeopledetailsSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC9B0C72473B0C30025D2DB /* PopularPeopledetailsSwiftUIView.swift */; };
@@ -162,7 +167,13 @@
 		DC898B0724617450002DED05 /* FavTabSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTabSwiftUIView.swift; sourceTree = "<group>"; };
 		DC898B092461746F002DED05 /* MyStufTabSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStufTabSwiftUIView.swift; sourceTree = "<group>"; };
 		DC898B0C2461864E002DED05 /* LoadingSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSwiftUIView.swift; sourceTree = "<group>"; };
+		DC91383E27A048C500010DA4 /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
+		DC91384027A048D700010DA4 /* PersonDetailsOO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsOO.swift; sourceTree = "<group>"; };
+		DC91384227A048E500010DA4 /* PersonDetailsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsClient.swift; sourceTree = "<group>"; };
 		DC936153246D45E8005AE79A /* MovieDetailsHeaderSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsHeaderSwiftUIView.swift; sourceTree = "<group>"; };
+		DC9914D5279856F800B39BE6 /* PeopleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
+		DCADC6C627A1046700D10A6B /* TitleSubTitleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubTitleCellView.swift; sourceTree = "<group>"; };
+		DCADC6C827A1083D00D10A6B /* HCombineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCombineListView.swift; sourceTree = "<group>"; };
 		DCB85E5A2462819F002BFF50 /* MoviesListSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListSwiftUIView.swift; sourceTree = "<group>"; };
 		DCB85E5C246281AF002BFF50 /* TVShowListSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowListSwiftUIView.swift; sourceTree = "<group>"; };
 		DCB85E62246288E8002BFF50 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -183,7 +194,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC10E0E2246AB3F5006A133C /* SDWebImageSwiftUI in Frameworks */,
-				DCB85E6D2462B9D0002BFF50 /* QGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +338,7 @@
 		DC55F18E24614E3A0046228F /* The Film */ = {
 			isa = PBXGroup;
 			children = (
+				DC9914D4279856DF00B39BE6 /* People */,
 				DC5E1A42278F0B6600292518 /* TVShow */,
 				DC5E1A3F278F057500292518 /* Helper */,
 				DC5E1A3C278EF5BF00292518 /* List */,
@@ -420,6 +431,7 @@
 			children = (
 				DC5E1A3D278EF5CE00292518 /* HMovieListView.swift */,
 				DC87AD172795A60200DBFBA3 /* HTVListView.swift */,
+				DCADC6C827A1083D00D10A6B /* HCombineListView.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -471,6 +483,16 @@
 			path = HomeTab;
 			sourceTree = "<group>";
 		};
+		DC91383D27A048A400010DA4 /* People Details */ = {
+			isa = PBXGroup;
+			children = (
+				DC91383E27A048C500010DA4 /* PersonDetailsView.swift */,
+				DC91384027A048D700010DA4 /* PersonDetailsOO.swift */,
+				DC91384227A048E500010DA4 /* PersonDetailsClient.swift */,
+			);
+			path = "People Details";
+			sourceTree = "<group>";
+		};
 		DC936152246D457D005AE79A /* MovieDetails Custom Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -480,6 +502,15 @@
 				DC7A3D7F246E4CEE00E8EA83 /* MovieDetailRecommendationsMovieListSwiftUIView.swift */,
 			);
 			path = "MovieDetails Custom Cell";
+			sourceTree = "<group>";
+		};
+		DC9914D4279856DF00B39BE6 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				DC91383D27A048A400010DA4 /* People Details */,
+				DC9914D5279856F800B39BE6 /* PeopleListView.swift */,
+			);
+			path = People;
 			sourceTree = "<group>";
 		};
 		DCB85E61246288D3002BFF50 /* Manager */ = {
@@ -506,6 +537,7 @@
 				DC1B870124696D3F00F05A41 /* TVShowCellSwiftUIView.swift */,
 				DC5E1A3A278EE6B500292518 /* IDBMCellView.swift */,
 				DC87AD152795A4A700DBFBA3 /* IDBMTVCellView.swift */,
+				DCADC6C627A1046700D10A6B /* TitleSubTitleCellView.swift */,
 			);
 			path = "Cell View";
 			sourceTree = "<group>";
@@ -527,7 +559,6 @@
 			);
 			name = "The Film";
 			packageProductDependencies = (
-				DCB85E6C2462B9D0002BFF50 /* QGrid */,
 				DC10E0E1246AB3F5006A133C /* SDWebImageSwiftUI */,
 			);
 			productName = "The Film";
@@ -603,7 +634,6 @@
 			);
 			mainGroup = DC55F18324614E3A0046228F;
 			packageReferences = (
-				DCB85E6B2462B9CF002BFF50 /* XCRemoteSwiftPackageReference "QGrid" */,
 				DC10E0E0246AB3F5006A133C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = DC55F18D24614E3A0046228F /* Products */;
@@ -652,11 +682,13 @@
 			files = (
 				DC898B0824617450002DED05 /* FavTabSwiftUIView.swift in Sources */,
 				DC5E1A48278F0BCA00292518 /* TVShowClient.swift in Sources */,
+				DCADC6C727A1046700D10A6B /* TitleSubTitleCellView.swift in Sources */,
 				DCB85E6A2462A6C0002BFF50 /* HomeClient.swift in Sources */,
 				DC898B0D2461864E002DED05 /* LoadingSwiftUIView.swift in Sources */,
 				DC5E1A39278ED25600292518 /* MovieClient.swift in Sources */,
 				DC2A18F724728C11009B01CC /* PopularPeopleSwiftUIView.swift in Sources */,
 				DC7A3D7C246E4A8100E8EA83 /* MovieDetailsOverViewSwiftUIView.swift in Sources */,
+				DC9914D6279856F800B39BE6 /* PeopleListView.swift in Sources */,
 				DC898B062461741B002DED05 /* SearchTabSwiftUIView.swift in Sources */,
 				DC2A18FC24728E12009B01CC /* PersonsListDataModel.swift in Sources */,
 				DC5E1A37278ED03700292518 /* MovieOO.swift in Sources */,
@@ -665,8 +697,10 @@
 				DC55F19224614E3A0046228F /* SceneDelegate.swift in Sources */,
 				DC1451F2246BEC7300FA50A9 /* WebViewSwiftUIView.swift in Sources */,
 				DC7A3D85246EA2B000E8EA83 /* TVShowDetailsClient.swift in Sources */,
+				DC91384327A048E500010DA4 /* PersonDetailsClient.swift in Sources */,
 				DCB85E5D246281AF002BFF50 /* TVShowListSwiftUIView.swift in Sources */,
 				DC5E1A35278ED02600292518 /* MovieView.swift in Sources */,
+				DC91383F27A048C500010DA4 /* PersonDetailsView.swift in Sources */,
 				DC2B0A1124725AD900FC483B /* TVShowDetailsSeasonSwiftUIView.swift in Sources */,
 				DCC9B0C82473B0C30025D2DB /* PopularPeopledetailsSwiftUIView.swift in Sources */,
 				DC2A18FA24728CB2009B01CC /* PersonsModel.swift in Sources */,
@@ -676,6 +710,7 @@
 				DC7A3D83246EA28000E8EA83 /* TVShowDetailsSwiftUIView.swift in Sources */,
 				DC2A18FF247291B3009B01CC /* PopularPersonsCellSwiftUIView.swift in Sources */,
 				DCC9B0CA2473B0DC0025D2DB /* PopularPeopleDetailsModel.swift in Sources */,
+				DC91384127A048D700010DA4 /* PersonDetailsOO.swift in Sources */,
 				DC55F19724614E3A0046228F /* ContentView.swift in Sources */,
 				DC898B022461712D002DED05 /* TabbarSwiftUI.swift in Sources */,
 				DC1B86FF24696BA300F05A41 /* TVShowListDataModel.swift in Sources */,
@@ -710,6 +745,7 @@
 				DCC9B0CE2473B18B0025D2DB /* PopularPersonDetailsDataModel.swift in Sources */,
 				DC7A3D89246EA30800E8EA83 /* TVShowDetailsDataModel.swift in Sources */,
 				DC5E1A41278F058200292518 /* Helper.swift in Sources */,
+				DCADC6C927A1083D00D10A6B /* HCombineListView.swift in Sources */,
 				DC5E1A46278F0BB800292518 /* TVShowOO.swift in Sources */,
 				DCB85E63246288E8002BFF50 /* APIManager.swift in Sources */,
 				DC10E0DD246A912E006A133C /* MovieDetailsClient.swift in Sources */,
@@ -1050,14 +1086,6 @@
 				minimumVersion = 1.4.0;
 			};
 		};
-		DCB85E6B2462B9CF002BFF50 /* XCRemoteSwiftPackageReference "QGrid" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Q-Mobile/QGrid";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.4;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1065,11 +1093,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DC10E0E0246AB3F5006A133C /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
 			productName = SDWebImageSwiftUI;
-		};
-		DCB85E6C2462B9D0002BFF50 /* QGrid */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DCB85E6B2462B9CF002BFF50 /* XCRemoteSwiftPackageReference "QGrid" */;
-			productName = QGrid;
 		};
 /* End XCSwiftPackageProductDependency section */
 
