@@ -17,7 +17,13 @@ struct HMovieListView: View {
             ScrollView(.horizontal, showsIndicators: true) {
                 LazyHStack(alignment: .center, spacing: 10) {
                     ForEach(movieDataModelList ?? []) { movieObject in
-                        IDBMCellView(movieObject: movieObject)
+
+                        NavigationLink {
+                            MovieDetailsView(movieID: movieObject.id)
+                        } label: {
+                            IDBMCellView(movieObject: movieObject)
+                        }
+
                     }
                 }.padding([.horizontal, .vertical])
                    // .background(Color.yellow)

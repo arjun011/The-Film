@@ -91,11 +91,14 @@ struct IDBMCellView: View {
                     .font(.system(size: 15, weight: .semibold))
                     .allowsTightening(true)
                     .lineLimit(2)
+                    .multilineTextAlignment(.leading)
                 
                 Text(Helper.convertDateFormat(inputDate: movieObject.release_date ?? "" ))
                     .font(.system(size: 12, weight: .light))
+                    .multilineTextAlignment(.leading)
                     
             }.padding([.horizontal,.bottom], 10)
+            .foregroundColor(.black)
             
             
         }.frame(width: 160, height: 300, alignment: .center)

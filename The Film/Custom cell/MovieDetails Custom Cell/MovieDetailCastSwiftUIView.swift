@@ -19,22 +19,16 @@ struct MovieDetailCastSwiftUIView: View {
                 .renderingMode(.original)
                 .placeholder(content: {
                     Image(systemName: "star")
-                        .foregroundColor(.white)
                         .font(.system(size: 35))
                 })
-                .frame(width: 80, height:120)
-            
+                .frame(width: 130, height:170)
                 .scaledToFit()
                 .clipped()
-                .cornerRadius(5)
+                .cornerRadius(6)
             
-            Text("\(cast?.name ?? "")")
-                .font(.caption)
-                .fontWeight(.semibold)
-            Text("\(cast?.character ?? "")")
-                .font(.caption)
-                .fixedSize(horizontal: false, vertical: true)
-        }).foregroundColor(Color.white)
+            
+        }).foregroundColor(Color.black)
+        
         
     }
     var getProfileImageUrl:(String?) -> String = {

@@ -34,7 +34,7 @@ struct PersonDetailsView: View {
                         
                         TitleSubTitleCellView(title: "Gender" , subTitle: (self.model.personDetail?.gender ?? 1) == 1 ? "Female" : "Male")
                         
-                        TitleSubTitleCellView(title: "Birthday" , subTitle: self.model.personDetail?.birthday ?? "")
+                        TitleSubTitleCellView(title: "Birthday" , subTitle: Helper.convertDateFormat(inputDate: self.model.personDetail?.birthday ?? ""))
                         
                         TitleSubTitleCellView(title: "Place of Birth" , subTitle: self.model.personDetail?.place_of_birth ?? "")
                             

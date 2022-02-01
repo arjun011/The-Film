@@ -12,8 +12,8 @@ class MovieDetailsModel: ObservableObject {
     @Published var movieDetails: MovieDetailsDataModel?
     private let client = MovieDetailsClient()
     var movieTime: String {
-        let time = self.getFormattedVideoTime(Duration: (self.movieDetails?.runtime ?? 0))
-        return ("\(time.hour)h \(time.minute)m")
+       // let time = self.getFormattedVideoTime(Duration: (self.movieDetails?.runtime ?? 0))
+        return ("hm")
     }
     
     /// Retrive movies list
@@ -32,12 +32,6 @@ class MovieDetailsModel: ObservableObject {
         }
     }
     
-    private func getFormattedVideoTime(Duration: Int) -> (hour: Int, minute: Int, seconds: Int){
-        let totalVideoDuration = Duration * 60
-        let seconds = totalVideoDuration % 60
-        let minutes = (totalVideoDuration / 60) % 60
-        let hours   = Int(totalVideoDuration / 3600)
-        return (hours,minutes,seconds)
-    }
+   
 }
     
