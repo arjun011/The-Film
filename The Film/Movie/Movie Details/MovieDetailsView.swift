@@ -56,18 +56,64 @@ struct MovieDetailsView: View {
                         
                         HStack(alignment: .center) {
                             
+                            HStack(alignment: .center ,spacing: 18, content: {
+                                
+                                VoteAverageCircleSwiftUIView(voteAverage: self.model.movieDetails?.vote_average ,circleFrame: (width: 35.0, height: 35.0))
+                                
+                                
+                                Image(systemName: "list.bullet")
+                                
+                                Image(systemName: "heart")
+                                
+                                Image(systemName: "tag")
+                                
+                                Image(systemName: "star")
+                                
+                            })
+                            .foregroundColor(.white)
+                            .font(.title2)
+    
                             Spacer()
                             
                             Text(Helper.convertTimeTohourMinute(input: self.model.movieDetails?.runtime ?? 0))
                                 .font(.system(size: 15, weight: .medium, design: .default))
                                 .foregroundColor(.white)
-                        }
+                            
+                        }.padding(.horizontal)
                         
                         VStack(alignment: .leading, spacing: 10) {
                             
-                            Text(self.model.movieDetails?.title ?? "")
-                                .font(.system(size: 22, weight: .semibold))
-                                .padding(.horizontal)
+                            Group {
+                                
+                                VStack(alignment: .leading, spacing: 5) {
+                                
+                                    Text(self.model.movieDetails?.title ?? "").font(.system(size: 22, weight: .semibold))
+                                    
+                                    Text(self.model.movieDetails?.tagline ?? "")
+                                        .font(.system(size: 17, weight: .medium))
+                                        .foregroundColor(.gray)
+                                }
+                                
+                                
+                                HStack(alignment: .center, spacing: 5) {
+                                    
+                                    Text(Helper.convertDateFormat(inputDate: self.model.movieDetails?.release_date ?? ""))
+                                    
+                                    Text(self.model.movieDetails?.genres.map{$0.name ?? ""}.joined(separator: ", ") ?? "")
+                                        
+                                        .foregroundColor(.gray)
+                                        
+                                }.font(.system(size: 15, weight: .regular))
+                                .foregroundColor(.gray)
+                                
+                                
+                                
+                            }.padding(.horizontal)
+                            
+                            
+                            
+                            
+                            
                             
                             Text(self.model.movieDetails?.overview ?? "")
                                 .padding(.horizontal)
@@ -92,17 +138,40 @@ struct MovieDetailsView: View {
                                     }.padding(.horizontal)
                                     
                                 }
+                                
+                                HStack {
+                                    
+                                    Spacer()
+                                    
+                                    Button {
+                                        
+                                    } label: {
+                                        
+                                        HStack(alignment: .center, spacing: 5) {
+                                            Text("Review")
+                                            Image(systemName: "captions.bubble")
+                                        }.padding()
+
+                                        
+                                    }.background(.ultraThinMaterial)
+                                    .cornerRadius(10)
+                                    .padding()
+                                }
+                                
+                                
+
+                                
                             })
                         }
                         
-                    }.offset(y: -40)
+                    }.offset(y: -47)
                     
                 }
                 Spacer()
                 
             }.onAppear {
-                model.getMoviesDetails(movieID: movieID ?? 0)
-                // model.getTestData()
+               // model.getMoviesDetails(movieID: movieID ?? 0)
+                 model.getTestData()
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
                 .ignoresSafeArea(edges: .top)
         }
