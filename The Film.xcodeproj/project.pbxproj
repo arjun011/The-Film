@@ -62,11 +62,6 @@
 		DC7A3D89246EA30800E8EA83 /* TVShowDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A3D88246EA30800E8EA83 /* TVShowDetailsDataModel.swift */; };
 		DC87AD162795A4A700DBFBA3 /* IDBMTVCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87AD152795A4A700DBFBA3 /* IDBMTVCellView.swift */; };
 		DC87AD182795A60200DBFBA3 /* HTVListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87AD172795A60200DBFBA3 /* HTVListView.swift */; };
-		DC898B022461712D002DED05 /* TabbarSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC898B012461712D002DED05 /* TabbarSwiftUI.swift */; };
-		DC898B04246173CA002DED05 /* HomeTabSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC898B03246173CA002DED05 /* HomeTabSwiftUIView.swift */; };
-		DC898B062461741B002DED05 /* SearchTabSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC898B052461741B002DED05 /* SearchTabSwiftUIView.swift */; };
-		DC898B0824617450002DED05 /* FavTabSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC898B0724617450002DED05 /* FavTabSwiftUIView.swift */; };
-		DC898B0A2461746F002DED05 /* MyStufTabSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC898B092461746F002DED05 /* MyStufTabSwiftUIView.swift */; };
 		DC898B0D2461864E002DED05 /* LoadingSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC898B0C2461864E002DED05 /* LoadingSwiftUIView.swift */; };
 		DC91383F27A048C500010DA4 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91383E27A048C500010DA4 /* PersonDetailsView.swift */; };
 		DC91384127A048D700010DA4 /* PersonDetailsOO.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC91384027A048D700010DA4 /* PersonDetailsOO.swift */; };
@@ -170,11 +165,6 @@
 		DC7A3D88246EA30800E8EA83 /* TVShowDetailsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailsDataModel.swift; sourceTree = "<group>"; };
 		DC87AD152795A4A700DBFBA3 /* IDBMTVCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDBMTVCellView.swift; sourceTree = "<group>"; };
 		DC87AD172795A60200DBFBA3 /* HTVListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTVListView.swift; sourceTree = "<group>"; };
-		DC898B012461712D002DED05 /* TabbarSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarSwiftUI.swift; sourceTree = "<group>"; };
-		DC898B03246173CA002DED05 /* HomeTabSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabSwiftUIView.swift; sourceTree = "<group>"; };
-		DC898B052461741B002DED05 /* SearchTabSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabSwiftUIView.swift; sourceTree = "<group>"; };
-		DC898B0724617450002DED05 /* FavTabSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTabSwiftUIView.swift; sourceTree = "<group>"; };
-		DC898B092461746F002DED05 /* MyStufTabSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStufTabSwiftUIView.swift; sourceTree = "<group>"; };
 		DC898B0C2461864E002DED05 /* LoadingSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSwiftUIView.swift; sourceTree = "<group>"; };
 		DC91383E27A048C500010DA4 /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
 		DC91384027A048D700010DA4 /* PersonDetailsOO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsOO.swift; sourceTree = "<group>"; };
@@ -409,11 +399,6 @@
 		DC55F1C224615A130046228F /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				DC898B012461712D002DED05 /* TabbarSwiftUI.swift */,
-				DC898B03246173CA002DED05 /* HomeTabSwiftUIView.swift */,
-				DC898B052461741B002DED05 /* SearchTabSwiftUIView.swift */,
-				DC898B0724617450002DED05 /* FavTabSwiftUIView.swift */,
-				DC898B092461746F002DED05 /* MyStufTabSwiftUIView.swift */,
 				DC5E1A2C278ECD7D00292518 /* HomeTabView.swift */,
 			);
 			path = TabBar;
@@ -716,7 +701,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC898B0824617450002DED05 /* FavTabSwiftUIView.swift in Sources */,
 				DC5E1A48278F0BCA00292518 /* TVShowClient.swift in Sources */,
 				DCADC6C727A1046700D10A6B /* TitleSubTitleCellView.swift in Sources */,
 				DCB85E6A2462A6C0002BFF50 /* HomeClient.swift in Sources */,
@@ -725,7 +709,6 @@
 				DC2A18F724728C11009B01CC /* PopularPeopleSwiftUIView.swift in Sources */,
 				DC7A3D7C246E4A8100E8EA83 /* MovieDetailsOverViewSwiftUIView.swift in Sources */,
 				DC9914D6279856F800B39BE6 /* PeopleListView.swift in Sources */,
-				DC898B062461741B002DED05 /* SearchTabSwiftUIView.swift in Sources */,
 				DC2A18FC24728E12009B01CC /* PersonsListDataModel.swift in Sources */,
 				DC9C78BE27A8D970006D319C /* MovieDetailsView.swift in Sources */,
 				DC5E1A37278ED03700292518 /* MovieOO.swift in Sources */,
@@ -749,12 +732,10 @@
 				DCC9B0CA2473B0DC0025D2DB /* PopularPeopleDetailsModel.swift in Sources */,
 				DC91384127A048D700010DA4 /* PersonDetailsOO.swift in Sources */,
 				DC55F19724614E3A0046228F /* ContentView.swift in Sources */,
-				DC898B022461712D002DED05 /* TabbarSwiftUI.swift in Sources */,
 				DC1B86FF24696BA300F05A41 /* TVShowListDataModel.swift in Sources */,
 				DC9C78C027A8DA06006D319C /* MovieDetailsOO.swift in Sources */,
 				DCB85E65246288F8002BFF50 /* ClientManager.swift in Sources */,
 				DC7A3D87246EA2D100E8EA83 /* TVShowDetailsModel.swift in Sources */,
-				DC898B04246173CA002DED05 /* HomeTabSwiftUIView.swift in Sources */,
 				DC2B0A0924724C3000FC483B /* TVShowDetailsHeaderSwiftUIView.swift in Sources */,
 				DC2B0A1324725F2100FC483B /* TVDetailsRecommendationShowSwiftUIView.swift in Sources */,
 				DC7291BC2474E6FF0030CBC1 /* PopularPersonCastCellSwiftUIView.swift in Sources */,
@@ -772,7 +753,6 @@
 				DC2B0A0D2472548400FC483B /* TVShowDetailsCastSwiftUIView.swift in Sources */,
 				DC2B0A0F2472550200FC483B /* TVShowDetailsCreatedbySwiftUIView.swift in Sources */,
 				DC7A3D7E246E4C0300E8EA83 /* MovieDetailCastSwiftUIView.swift in Sources */,
-				DC898B0A2461746F002DED05 /* MyStufTabSwiftUIView.swift in Sources */,
 				DCB85E702462BD35002BFF50 /* MovieCellSwiftUIView.swift in Sources */,
 				DC5E1A30278ECDCC00292518 /* HomeView.swift in Sources */,
 				DC5CAE4427B3902C001FBADF /* ReviewsOO.swift in Sources */,
