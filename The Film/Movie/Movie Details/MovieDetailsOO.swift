@@ -11,6 +11,12 @@ class MovieDetailsOO: ObservableObject {
     @Published var movieDetails: MovieDetailsDataModel?
     private let client = MovieDetailsClient()
     
+    var trailerID:String {
+        get {
+            let trailerList = self.movieDetails?.videos?.results.first{$0.type ?? "" == "Trailer"}
+            return trailerList?.key ?? ""
+        }
+    }
     /// Retrive movies list
     /// - Parameter pageIndex: page Index
     func getMoviesDetails(movieID:Int) {

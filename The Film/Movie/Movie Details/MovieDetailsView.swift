@@ -48,7 +48,7 @@ struct MovieDetailsView: View {
                                         .font(.title)
                                         .foregroundColor(.pink)
                                 }.shadow(radius: 5).sheet(isPresented: self.$playTrailer) {
-                                    WebViewSwiftUIView(playUrl: self.model.movieDetails?.videos?.results.count ?? 0 > 0 ? self.model.movieDetails?.videos?.results[0].key : "")
+                                    WebViewSwiftUIView(playUrl: self.model.trailerID)
                                 }
                             }
                         }
