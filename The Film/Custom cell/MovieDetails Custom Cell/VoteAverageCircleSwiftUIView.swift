@@ -11,9 +11,8 @@ import SwiftUI
 struct VoteAverageCircleSwiftUIView: View {
     var voteAverage:Float?
     @State var voteAverageNumber:CGFloat?
-    
     var circleFrame:(width: CGFloat, height: CGFloat)
-    
+
     private var fillColor: Color {
         get {
             let fillColor = [Color.green, Color.yellow]
@@ -41,7 +40,7 @@ struct VoteAverageCircleSwiftUIView: View {
                         .font(.system(size: 11))
                         .fontWeight(.medium)
                         .foregroundColor(.white)
-            )
+                ).layoutPriority(1)
         }.onAppear {
             withAnimation(.linear.delay(0.5)) {
                 voteAverageNumber = CGFloat((voteAverage ?? 1.0) / 10)
@@ -50,8 +49,8 @@ struct VoteAverageCircleSwiftUIView: View {
     }
 }
 
-struct VoteAverageSwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        VoteAverageCircleSwiftUIView(voteAverage: 5.1,circleFrame: (width: 35, height: 35))
-    }
-}
+//struct VoteAverageSwiftUIView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        VoteAverageCircleSwiftUIView(voteAverage: 5.1,circleFrame: (width: 35, height: 35))
+//    }
+//}

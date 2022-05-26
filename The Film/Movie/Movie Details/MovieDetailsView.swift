@@ -13,7 +13,6 @@ struct MovieDetailsView: View {
     @StateObject private var model = MovieDetailsOO()
     @State private var playTrailer = false
     
-    
     var body: some View {
         
         ZStack{
@@ -21,7 +20,7 @@ struct MovieDetailsView: View {
             VStack(alignment: .center, spacing: 0) {
                 
                 ScrollView(.vertical, showsIndicators: true) {
-                    WebImage(url: URL(string: self.getProfileImageUrl(self.model.movieDetails?.backdrop_path)))
+                    WebImage(url: URL(string: self.getProfileImageUrl(self.model.movieDetails?.poster_path)))
                         .resizable()
                         .renderingMode(.original)
                         .frame(maxWidth: .infinity)
@@ -58,8 +57,10 @@ struct MovieDetailsView: View {
                             
                             HStack(alignment: .center ,spacing: 18, content: {
                                 
-                                VoteAverageCircleSwiftUIView(voteAverage: self.model.movieDetails?.vote_average ,circleFrame: (width: 35.0, height: 35.0))
-                                
+                                if !(self.model.movieDetails?.vote_average?.isZero ?? true) {
+                                    VoteAverageCircleSwiftUIView(voteAverage: self.model.movieDetails?.vote_average ,circleFrame: (width: 35.0, height: 35.0))
+                                        .layoutPriority(1)
+                                }
                                 
                                 Image(systemName: "list.bullet")
                                 
@@ -69,7 +70,7 @@ struct MovieDetailsView: View {
                                 
                                 Image(systemName: "star")
                                 
-                            })
+                            }).layoutPriority(1)
                             .foregroundColor(.white)
                             .font(.title2)
     
@@ -109,10 +110,6 @@ struct MovieDetailsView: View {
                                 
                                 
                             }.padding(.horizontal)
-                            
-                            
-                            
-                            
                             
                             
                             Text(self.model.movieDetails?.overview ?? "")
@@ -158,9 +155,6 @@ struct MovieDetailsView: View {
                                     .padding()
                                 }
                                 
-                                
-
-                                
                             })
                         }
                         
@@ -170,8 +164,7 @@ struct MovieDetailsView: View {
                 Spacer()
                 
             }.onAppear {
-               // model.getMoviesDetails(movieID: movieID ?? 0)
-                 model.getTestData()
+                model.getMoviesDetails(movieID: movieID ?? 0)
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
                 .ignoresSafeArea(edges: .top)
         }

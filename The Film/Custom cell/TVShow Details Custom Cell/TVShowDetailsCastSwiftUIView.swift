@@ -13,7 +13,7 @@ struct TVShowDetailsCastSwiftUIView: View {
     var body: some View {
         VStack {
             if cast?.media_type == "movie" {
-                MovieDetailsSwiftUIView(movieID: cast?.id)
+                MovieDetailsView(movieID: cast?.id)
             }else {
                 TVShowDetailsSwiftUIView(ShowID: cast?.id)
             }

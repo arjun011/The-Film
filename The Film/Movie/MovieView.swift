@@ -80,6 +80,7 @@ struct MovieView: View {
                         }
                     }.padding(.horizontal)
                         .font(.system(size: 15, weight: .bold))
+                    
                     HMovieListView(movieDataModelList: $model.upCommingList)
                 }
                 
