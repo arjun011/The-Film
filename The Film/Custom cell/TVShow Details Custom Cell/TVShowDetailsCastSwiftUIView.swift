@@ -18,9 +18,7 @@ struct TVShowDetailsCastSwiftUIView: View {
                 TVShowDetailsSwiftUIView(ShowID: cast?.id)
             }
         }
-        
     }
-    
 }
 
 struct TVShowDetailsCastSwiftUIView_Previews: PreviewProvider {

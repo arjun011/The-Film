@@ -8,6 +8,7 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
+import AVKit
 struct MovieDetailsView: View {
     var movieID:Int?
     @StateObject private var model = MovieDetailsOO()
@@ -29,24 +30,25 @@ struct MovieDetailsView: View {
                             
                             ZStack{
                                 
+                                VStack(alignment: .center) {
+
+                                    Spacer()
+
+                                    LinearGradient(colors: [.black.opacity(0),
+                                                            .black.opacity(0.5),
+                                                            .black.opacity(0.8)], startPoint: .top, endPoint: .bottom).frame(height: 70, alignment: .center)
+                                }
+                                
+                                
                                 Button {
                                     self.playTrailer.toggle()
+                                    print("Play Video")
                                 } label: {
                                     Image(systemName: "play.circle.fill")
                                         .font(.title)
                                         .foregroundColor(.pink)
                                 }.shadow(radius: 5).sheet(isPresented: self.$playTrailer) {
                                     WebViewSwiftUIView(playUrl: self.model.movieDetails?.videos?.results.count ?? 0 > 0 ? self.model.movieDetails?.videos?.results[0].key : "")
-                                }
-                                
-                                VStack(alignment: .center) {
-                                    
-                                    Spacer()
-                                    
-                                    LinearGradient(colors: [.black.opacity(0),
-                                                            .black.opacity(0.5),
-                                                            .black.opacity(0.8)], startPoint: .top, endPoint: .bottom)
-                                    
                                 }
                             }
                         }

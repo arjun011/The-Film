@@ -11,11 +11,9 @@ import WebKit
 struct WebViewSwiftUIView: View {
     var playUrl:String?
     @Environment(\.presentationMode) var presentation
-   // let webview = Webview(web: nil, req: URLRequest(url: URL(string: "https://www.youtube.com/watch?v=P6AaSMfXHbA")!))
-
     var body: some View {
         ZStack {
-            Webview(web: nil, req: URLRequest(url: URL(string: "https://www.youtube.com/watch?v=\(playUrl ?? "")")!))
+            Webview(web: nil, req: URLRequest(url: URL(string: "https://www.youtube.com/embed/\(playUrl ?? "")")!))
             .edgesIgnoringSafeArea(.all)
         }
         
@@ -49,5 +47,4 @@ struct Webview : UIViewRepresentable {
         uiView.load(request)
     }
 
- 
   }
