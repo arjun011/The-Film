@@ -319,7 +319,6 @@
 				DC5E1A2E278ECDBF00292518 /* Home */,
 				DC2A19002472B4E6009B01CC /* Data Model */,
 				DC2A18F524728B6C009B01CC /* People Details */,
-				DC7A3D81246EA25900E8EA83 /* TVShow Details */,
 				DC1451F0246BEC6200FA50A9 /* WebView */,
 				DC4C8A3D246ACA2100A27BB4 /* Custom cell */,
 				DCB85E712462CE20002BFF50 /* people.json */,
@@ -432,13 +431,6 @@
 				DC5E1A47278F0BCA00292518 /* TVShowClient.swift */,
 			);
 			path = TVShow;
-			sourceTree = "<group>";
-		};
-		DC7A3D81246EA25900E8EA83 /* TVShow Details */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "TVShow Details";
 			sourceTree = "<group>";
 		};
 		DC898B0B2461863A002DED05 /* LoadingView */ = {

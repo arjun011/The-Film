@@ -13,6 +13,10 @@ class PersonDetailsOO: ObservableObject {
     @Published var personKnownFor:[MovieDataModel]?
     private let client = PersonDetailsClient()
     
+
+    
+ //   @Published var showDetialsWithAnimation:ShowDetailsAnimation = ShowDetailsAnimation()
+    
     func getPopularPeopleDetails(userID:Int) {
         self.client.retrivePopularPeopleDetails(userId: userID) { (response) in
             switch response {

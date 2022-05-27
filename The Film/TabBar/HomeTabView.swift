@@ -15,6 +15,7 @@ struct HomeTabView: View {
             NavigationView {
                 HomeView()
                     .navigationTitle("Home")
+                    .navigationBarTitleDisplayMode(.large)
             }.tabItem {
                 VStack(alignment: .center, spacing: 5) {
                     Image(systemName: "house")

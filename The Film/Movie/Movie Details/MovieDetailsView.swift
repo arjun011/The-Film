@@ -153,7 +153,8 @@ struct MovieDetailsView: View {
             }.onAppear {
                 model.getMoviesDetails(movieID: movieID ?? 0)
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
-                .ignoresSafeArea(edges: .top)
+            .ignoresSafeArea(edges: .top)
+            
         }
         
         

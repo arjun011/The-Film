@@ -85,7 +85,7 @@ struct MovieView: View {
                     
                     HMovieListView(movieDataModelList: $model.upCommingList)
                 }
-                
+                .navigationBarTitleDisplayMode(.large)
                 
             }.onAppear {
                 debugPrint("Get Now laying")
@@ -94,7 +94,6 @@ struct MovieView: View {
                 self.model.getTopRatedMovie()
                 self.model.getUpCommingMovie()
             }
-            
             
         }
     }

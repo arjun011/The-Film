@@ -21,14 +21,12 @@ struct HomeView: View {
                     Text("TV Show").tag(1)
                     Text("Person").tag(2)
                 }.pickerStyle(.segmented)
-                    .padding([.horizontal, .bottom])
-                    
-                
+                .padding([.horizontal, .bottom])
                 selectedCategoery()
-                
                 Spacer()
                 
             }.searchable(text: $model.searchTxt)
+            
         }
         
         
