@@ -26,7 +26,8 @@ struct MovieView: View {
                         
                     } label: {
                         Image(systemName: "arrow.right")
-                            .tint(.black)
+                            .tint(.white)
+                            
                     }
                 }.padding(.horizontal)
                 .font(.system(size: 15, weight: .bold))
@@ -41,7 +42,8 @@ struct MovieView: View {
                         
                     } label: {
                         Image(systemName: "arrow.right")
-                            .tint(.black)
+                            .tint(.white)
+                            
                     }
                 }.padding(.horizontal)
                 .font(.system(size: 15, weight: .bold))
@@ -57,7 +59,7 @@ struct MovieView: View {
                         
                     } label: {
                         Image(systemName: "arrow.right")
-                            .tint(.black)
+                            .tint(.white)
 
                     }
                 }.padding(.horizontal)
@@ -75,7 +77,7 @@ struct MovieView: View {
                             
                         } label: {
                             Image(systemName: "arrow.right")
-                                .tint(.black)
+                                .tint(.white)
 
                         }
                     }.padding(.horizontal)

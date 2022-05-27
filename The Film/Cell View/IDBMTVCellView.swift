@@ -17,7 +17,11 @@ struct IDBMTVCellView: View {
                 WebImage(url: URL(string: self.getImageUrl(movieObject)))
                     .resizable()
                     .renderingMode(.original)
-                    .placeholder(Image(systemName: "photo"))
+                    .placeholder(content: {
+                        Image(systemName: "star")
+                            .foregroundColor(.white.opacity(0.4))
+                            .font(.system(size: 35))
+                    })
                     .indicator(.activity)
                     .frame(width: 160, height: 220, alignment: .center)
                     .aspectRatio(contentMode: .fill)

@@ -11,20 +11,20 @@ import SDWebImageSwiftUI
 struct TVDetailsRecommendationShowSwiftUIView: View {
     var tvShow:TVShowDataModel?
     var body: some View {
-                       
-                        WebImage(url: URL(string: self.getMovieImageUrl(tvShow)))
-                            .resizable()
-                            .renderingMode(.original)
-                            .placeholder(content: {
-                                                   Image(systemName: "star")
-                                                       .foregroundColor(.white)
-                                                       .font(.system(size: 35))
-                                               })
-                            .frame(width: 140, height:200)
-                            .scaledToFit()
-                            .clipped()
-                            .cornerRadius(5)
-         
+        
+        WebImage(url: URL(string: self.getMovieImageUrl(tvShow)))
+            .resizable()
+            .renderingMode(.original)
+            .placeholder(content: {
+                Image(systemName: "star")
+                    .foregroundColor(.white.opacity(0.4))
+                    .font(.system(size: 35))
+            })
+            .frame(width: 140, height:200)
+            .scaledToFit()
+            .clipped()
+            .cornerRadius(5)
+        
     }
     var getMovieImageUrl:(TVShowDataModel?) -> String = {
         return imageBaseUrl + "w342" + ($0?.poster_path ?? "")

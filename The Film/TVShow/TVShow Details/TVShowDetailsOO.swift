@@ -1,15 +1,23 @@
 //
-//  TVShowDetailsModel.swift
+//  TVShowDetailsOO.swift
 //  The Film
 //
-//  Created by Arjun C on 15/05/20.
-//  Copyright © 2020 Arjun C. All rights reserved.
+//  Created by Arjun on 27/05/22.
+//  Copyright © 2022 Arjun C. All rights reserved.
 //
 
 import Foundation
-class TVShowDetailsModel: ObservableObject {
+class TVShowDetailsOO: ObservableObject {
+    
     @Published var tvShowDetails:TVShowDetailsDataModel?
     private let client = TVShowDetailsClient()
+    
+    var trailerID:String {
+        get {
+            let trailerList = self.tvShowDetails?.videos?.results.first{$0.type ?? "" == "Trailer"}
+            return trailerList?.key ?? ""
+        }
+    }
     
     /// Retrive movies list
     /// - Parameter pageIndex: page Index

@@ -18,7 +18,8 @@ struct TVShowDetailsSeasonSwiftUIView: View {
                 .font(.headline)
             
             ScrollView(.horizontal, showsIndicators: true) {
-                HStack(alignment: .center, spacing: 15, content: {
+                LazyHStack(alignment: .center, spacing: 15, content: {
+                    
                     ForEach(self.tvShowDetails?.seasons ?? [seasonsDataModel](), id: \.id) { season in
                         
                         VStack(alignment: .leading, content: {
@@ -27,26 +28,23 @@ struct TVShowDetailsSeasonSwiftUIView: View {
                                 .resizable()
                                 .renderingMode(.original)
                                 .placeholder(content: {
-                                                       Image(systemName: "star")
-                                                           .foregroundColor(.white)
-                                                           .font(.system(size: 35))
-                                                   })
-                                .frame(width: 80, height:120)
-
+                                    Image(systemName: "star")
+                                        .foregroundColor(.white.opacity(0.4))
+                                        .font(.system(size: 35))
+                                })
+                                .frame(width: 130, height:170)
                                 .scaledToFit()
                                 .clipped()
                                 .cornerRadius(5)
                             
                             Text("\(season.name ?? "")")
-                            .font(.caption)
-                            .fontWeight(.semibold)
+                                .font(.caption)
+                                .fontWeight(.semibold)
                             
                             VStack {
-                                Text("\(season.air_date ?? "")")
                                 Text("\(season.episode_count ?? 0) Episodes")
                             }
                             .font(.caption)
-                        
                         })
                     }
                 })

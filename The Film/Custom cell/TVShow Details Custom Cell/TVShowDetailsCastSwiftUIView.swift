@@ -15,7 +15,7 @@ struct TVShowDetailsCastSwiftUIView: View {
             if cast?.media_type == "movie" {
                 MovieDetailsView(movieID: cast?.id)
             }else {
-                TVShowDetailsSwiftUIView(ShowID: cast?.id)
+                TVShowDetailsView(tvShowID: cast?.id)
             }
         }
     }

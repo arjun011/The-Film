@@ -27,10 +27,10 @@ struct TVShowDetailsCreatedbySwiftUIView: View {
                                 .renderingMode(.original)
                                 .placeholder(content: {
                                     Image(systemName: "star")
-                                        .foregroundColor(.white)
+                                        .foregroundColor(.white.opacity(0.4))
                                         .font(.system(size: 35))
                                 })
-                                .frame(width: 80, height:120)
+                                .frame(width: 120, height:160)
                                 .scaledToFit()
                                 .clipped()
                                 .cornerRadius(5)

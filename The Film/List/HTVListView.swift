@@ -17,14 +17,16 @@ struct HTVListView: View {
             ScrollView(.horizontal, showsIndicators: true) {
                 LazyHStack(alignment: .center, spacing: 10) {
                     ForEach(TVDataModelList ?? []) { movieObject in
-                        IDBMTVCellView(movieObject: movieObject)
+                      
+                        NavigationLink {
+                            TVShowDetailsView(tvShowID: movieObject.id)
+                        } label: {
+                            IDBMTVCellView(movieObject: movieObject)
+                        }
                     }
                 }.padding([.horizontal, .vertical])
-                   // .background(Color.yellow)
             }
         }
-        
-  
     }
 }
 

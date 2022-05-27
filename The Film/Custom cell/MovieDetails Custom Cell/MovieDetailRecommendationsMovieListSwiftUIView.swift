@@ -15,7 +15,11 @@ struct MovieDetailRecommendationsMovieListSwiftUIView: View {
                         WebImage(url: URL(string: self.getMovieImageUrl(movie)))
                             .resizable()
                             .renderingMode(.original)
-                            .placeholder(Image(systemName: "photo"))
+                            .placeholder(content: {
+                                Image(systemName: "star")
+                                    .foregroundColor(.white.opacity(0.4))
+                                    .font(.system(size: 35))
+                            })
                             .indicator(.activity)
                             .frame(width: 140, height:200)
                             .scaledToFit()

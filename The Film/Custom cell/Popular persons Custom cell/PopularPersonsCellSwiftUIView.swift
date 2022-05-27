@@ -14,16 +14,16 @@ struct PopularPersonsCellSwiftUIView: View {
         VStack(alignment: HorizontalAlignment.leading) {
             
             WebImage(url: URL(string: self.getImageUrl(persons)))
-                    .resizable()
-                    .renderingMode(.original)
-                    .placeholder(content: {
-                                           Image(systemName: "star")
-                                               .foregroundColor(.white)
-                                               .font(.system(size: 35))
-                                       })
-                    .aspectRatio(contentMode: .fit)
-                    .clipped()
-                    .padding(.bottom,10)
+                .resizable()
+                .renderingMode(.original)
+                .placeholder(content: {
+                    Image(systemName: "star")
+                        .foregroundColor(.white.opacity(0.4))
+                        .font(.system(size: 35))
+                })
+                .aspectRatio(contentMode: .fit)
+                .clipped()
+                .padding(.bottom,10)
             
             VStack(alignment: .leading, spacing: 3) {
                 Text(persons?.name ?? "N/A")
@@ -35,7 +35,7 @@ struct PopularPersonsCellSwiftUIView: View {
             .padding([.horizontal,.vertical], 10)
             
         }.cornerRadius(10)
-        .background(RoundedRectangle(cornerRadius: 10).fill(Color.white).shadow(radius: 5))
+            .background(RoundedRectangle(cornerRadius: 10).fill(Color.white).shadow(radius: 5))
     }
     
     var getImageUrl:(PersonsDataModel?) -> String = {
