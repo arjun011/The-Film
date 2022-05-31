@@ -26,7 +26,6 @@ struct HMovieListView: View {
 
                     }
                 }.padding([.horizontal, .vertical])
-                   // .background(Color.yellow)
             }
         }
         

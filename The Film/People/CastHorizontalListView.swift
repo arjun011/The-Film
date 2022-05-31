@@ -24,7 +24,7 @@ struct CastHorizontalListView: View {
                             MovieDetailCastSwiftUIView(cast: cast)
                         }
                     }
-                })
+                }).padding(.leading)
             }
         })
     }

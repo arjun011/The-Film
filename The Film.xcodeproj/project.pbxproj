@@ -76,7 +76,6 @@
 		DCB85E6A2462A6C0002BFF50 /* HomeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB85E692462A6C0002BFF50 /* HomeClient.swift */; };
 		DCB85E702462BD35002BFF50 /* MovieCellSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB85E6F2462BD35002BFF50 /* MovieCellSwiftUIView.swift */; };
 		DCB85E722462CE20002BFF50 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = DCB85E712462CE20002BFF50 /* people.json */; };
-		DCC9B0C82473B0C30025D2DB /* PopularPeopledetailsSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC9B0C72473B0C30025D2DB /* PopularPeopledetailsSwiftUIView.swift */; };
 		DCC9B0CA2473B0DC0025D2DB /* PopularPeopleDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC9B0C92473B0DC0025D2DB /* PopularPeopleDetailsModel.swift */; };
 		DCC9B0CC2473B0EC0025D2DB /* PopularPeopledetailsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC9B0CB2473B0EC0025D2DB /* PopularPeopledetailsClient.swift */; };
 		DCC9B0CE2473B18B0025D2DB /* PopularPersonDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC9B0CD2473B18B0025D2DB /* PopularPersonDetailsDataModel.swift */; };
@@ -175,7 +174,6 @@
 		DCB85E692462A6C0002BFF50 /* HomeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeClient.swift; sourceTree = "<group>"; };
 		DCB85E6F2462BD35002BFF50 /* MovieCellSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellSwiftUIView.swift; sourceTree = "<group>"; };
 		DCB85E712462CE20002BFF50 /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
-		DCC9B0C72473B0C30025D2DB /* PopularPeopledetailsSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularPeopledetailsSwiftUIView.swift; sourceTree = "<group>"; };
 		DCC9B0C92473B0DC0025D2DB /* PopularPeopleDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularPeopleDetailsModel.swift; sourceTree = "<group>"; };
 		DCC9B0CB2473B0EC0025D2DB /* PopularPeopledetailsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularPeopledetailsClient.swift; sourceTree = "<group>"; };
 		DCC9B0CD2473B18B0025D2DB /* PopularPersonDetailsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularPersonDetailsDataModel.swift; sourceTree = "<group>"; };
@@ -219,7 +217,6 @@
 		DC2A18F524728B6C009B01CC /* People Details */ = {
 			isa = PBXGroup;
 			children = (
-				DCC9B0C72473B0C30025D2DB /* PopularPeopledetailsSwiftUIView.swift */,
 				DCC9B0C92473B0DC0025D2DB /* PopularPeopleDetailsModel.swift */,
 				DCC9B0CB2473B0EC0025D2DB /* PopularPeopledetailsClient.swift */,
 			);
@@ -694,7 +691,6 @@
 				DC5E1A35278ED02600292518 /* MovieView.swift in Sources */,
 				DC91383F27A048C500010DA4 /* PersonDetailsView.swift in Sources */,
 				DC2B0A1124725AD900FC483B /* TVShowDetailsSeasonSwiftUIView.swift in Sources */,
-				DCC9B0C82473B0C30025D2DB /* PopularPeopledetailsSwiftUIView.swift in Sources */,
 				DC2A18FA24728CB2009B01CC /* PersonsModel.swift in Sources */,
 				DC5E1A3E278EF5CE00292518 /* HMovieListView.swift in Sources */,
 				DC87AD182795A60200DBFBA3 /* HTVListView.swift in Sources */,
@@ -902,9 +898,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"The Film/Preview Content\"";
-				DEVELOPMENT_TEAM = 8VL2VD9YVV;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "The Film/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -912,8 +908,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "Lazy-Coder.The-Film";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -923,9 +921,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "\"The Film/Preview Content\"";
-				DEVELOPMENT_TEAM = 8VL2VD9YVV;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "The Film/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -933,8 +931,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "Lazy-Coder.The-Film";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -989,7 +989,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8VL2VD9YVV;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "The FilmUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1009,7 +1009,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8VL2VD9YVV;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "The FilmUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

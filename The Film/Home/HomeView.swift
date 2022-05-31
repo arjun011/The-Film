@@ -26,9 +26,7 @@ struct HomeView: View {
                 Spacer()
                 
             }.searchable(text: $model.searchTxt)
-            
         }
-        
         
     }
     
@@ -36,11 +34,11 @@ struct HomeView: View {
         
         switch self.model.selectedCategoery {
         case 0:
-            return AnyView(MovieView())
+            return AnyView(MovieView().navigationTitle("Movies"))
         case 1:
-            return AnyView(TVShowView())
+            return AnyView(TVShowView().navigationTitle("TV Shows"))
         default :
-            return AnyView(PeopleListView())
+            return AnyView(PeopleListView().navigationTitle("Person"))
         }
         
     }

@@ -10,29 +10,36 @@ import SwiftUI
 import SDWebImageSwiftUI
 import MapKit
 struct PersonDetailsView: View {
+    
     var personID:Int?
     @StateObject private var model = PersonDetailsOO()
-    @State var showPersonDetails:Bool = false
     
     // Animation Variables
-    @State private var knowFor:Bool = false
-    @State private var gender:Bool = false
-    @State private var birthday:Bool = false
-    @State private var placeOfBirth:Bool = false
-    
+    @State var showPersonDetails:Bool = false
+    @State var showBioGraphyDetails:Bool = false
+    @State var showBioGraphyTitle:Bool = false
+    @State var showKnowFor:Bool = false
+    @State var showProfilePic:Bool = false
     
     var body: some View {
+        
         ScrollView(.vertical, showsIndicators: true) {
             
-        VStack(alignment: .leading, spacing: 10) {
-            
+            VStack(alignment: .leading, spacing: 10) {
+                
                 HStack(alignment: .center) {
-                    WebImage(url: URL(string: self.getImageUrl(self.model.personDetail?.profile_path)))
-                        .resizable()
-                        .renderingMode(.original)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .frame(width: 170, height: 170, alignment: .center)
-                        .shadow(radius: 5)
+                    
+                    VStack{
+                        WebImage(url: URL(string: self.getImageUrl(self.model.personDetail?.profile_path)))
+                            .resizable()
+                            .renderingMode(.original)
+                           
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                            .frame(width: 170, height: 170, alignment: .center)
+                            .shadow(radius: 5)
+                    }.opacity(self.showProfilePic ? 1 : 0)
+                    .animation(.easeInOut(duration: 0.8).delay(0.5), value: self.showProfilePic)
+                    
                     
                     if showPersonDetails {
                         
@@ -47,8 +54,8 @@ struct PersonDetailsView: View {
                             TitleSubTitleCellView(title: "Place of Birth" , subTitle: self.model.personDetail?.place_of_birth ?? "")
                             
                         }.font(.system(size: 20, weight: .bold))
-                        .padding(.horizontal, 10)
-                        .transition(.move(edge: .trailing).combined(with: .opacity))
+                            .padding(.horizontal, 10)
+                            .transition(.move(edge: .trailing).combined(with: .opacity))
                         
                     }
                     
@@ -56,20 +63,38 @@ struct PersonDetailsView: View {
                     
                 }
                 
-                Text("Biography")
-                    .font(.system(size: 18, weight: .bold))
+                if self.showBioGraphyTitle {
+                    Text("Biography")
+                        .font(.system(size: 18, weight: .bold))
+                        .transition(.move(edge: .leading).combined(with: .opacity))
+                }
                 
-                Text(self.model.personDetail?.biography ?? "")
-                    .font(.system(size: 15, weight: .regular))
+                if self.showBioGraphyDetails {
+                    Text(self.model.personDetail?.biography ?? "")
+                        .font(.system(size: 15, weight: .regular))
+                        .transition(.move(edge: .top).combined(with: .opacity))
+                }
                 
+            }.padding(.horizontal)
+            
+            VStack(alignment: .leading, spacing: 10) {
                 
+                // if self.showKnowFor {
                 Text("Known For")
                     .font(.system(size: 18, weight: .bold))
+                    .opacity(self.showKnowFor ? 1 : 0)
+                    .animation(.easeInOut.delay(0.6), value: self.showKnowFor)
+                    .padding([.horizontal])
+                    .padding(.top, 10)
                 
                 HMovieListView(movieDataModelList: self.$model.personKnownFor)
+                    .opacity(self.showKnowFor ? 1 : 0)
+                    .animation(.easeInOut.delay(0.6), value: self.showKnowFor)
+                //.transition(.move(edge: .trailing).combined(with: .opacity))
+                // }
             }
             Spacer()
-        }.padding(.horizontal)
+        }
         .navigationTitle(self.model.personDetail?.name ?? "")
         
         .onAppear {
@@ -79,10 +104,19 @@ struct PersonDetailsView: View {
             withAnimation(.easeInOut(duration: 0.6).delay(0.4)) {
                 self.showPersonDetails = true
             }
+            
+            withAnimation(.easeInOut(duration: 0.6).delay(0.4)) {
+                self.showBioGraphyDetails = true
+            }
+            
+            withAnimation(.easeInOut(duration: 0.6).delay(0.6)) {
+                self.showBioGraphyTitle = true
+            }
+            self.showKnowFor = true
+            self.showProfilePic = true
         }
-        
-        
     }
+    
     var getImageUrl:(String?) -> String = {
         return imageBaseUrl + "w342" + ($0 ?? "")
     }

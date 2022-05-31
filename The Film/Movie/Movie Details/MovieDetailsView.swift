@@ -80,7 +80,7 @@ struct MovieDetailsView: View {
                             
                             Text(Helper.convertTimeTohourMinute(input: self.model.movieDetails?.runtime ?? 0))
                                 .font(.system(size: 15, weight: .medium, design: .default))
-                                .foregroundColor(.white)
+                                .foregroundColor(Color("placeHolderColor"))
                             
                         }.padding(.horizontal)
                         
@@ -120,9 +120,9 @@ struct MovieDetailsView: View {
                             
                             VStack(alignment: .leading, content: {
                                 
-                                //TVShow Cast
+                                //Cast List
                                 CastHorizontalListView(castList: self.model.movieDetails?.credits?.cast ?? [castDataModel]())
-                                
+                                   
                                 HStack {
                                     
                                     Spacer()

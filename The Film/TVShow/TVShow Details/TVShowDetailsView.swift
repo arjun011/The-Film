@@ -16,8 +16,6 @@ struct TVShowDetailsView: View {
     @State private var playTrailer:Bool = false
     
     var body: some View {
-        
-        ZStack{
             
             VStack(alignment: .center, spacing: 0) {
                 
@@ -145,6 +143,7 @@ struct TVShowDetailsView: View {
                         }
                         
                     }.offset(y: -47)
+                    .padding(.horizontal)
                     
                 }
                 Spacer()
@@ -152,8 +151,8 @@ struct TVShowDetailsView: View {
             }.onAppear {
                 self.model.getTvShowDetails(showId: self.tvShowID ?? 1)
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
-                .ignoresSafeArea(edges: .top)
-        }
+            .ignoresSafeArea(edges: .top)
+        
     }
     
     var getBackgroundImage: (String?) -> String  = {

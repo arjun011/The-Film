@@ -18,7 +18,7 @@ struct PopularPersonCastCellSwiftUIView: View {
                     .renderingMode(.original)
                     .placeholder(content: {
                         Image(systemName: "star")
-                            .foregroundColor(.white.opacity(0.4))
+                        .foregroundColor(Color("placeHolderColor").opacity(0.4))
                             .font(.system(size: 35))
                     })
                     .frame(width: 130, height: 185)
