@@ -14,9 +14,12 @@ struct MovieDetailsView: View {
     @StateObject private var model = MovieDetailsOO()
     @State private var playTrailer = false
     
+    // Animation variables
+    @State var showOptions:Bool = false
+    
     var body: some View {
         
-        ZStack{
+        ZStack(alignment: .topLeading) {
             
             VStack(alignment: .center, spacing: 0) {
                 
@@ -27,17 +30,32 @@ struct MovieDetailsView: View {
                         .frame(maxWidth: .infinity)
                         .aspectRatio(0.8, contentMode: .fit)
                         .overlay {
-                            
                             ZStack{
                                 
                                 VStack(alignment: .center) {
-
+                                    
+                                    HStack(alignment: .center) {
+                                        
+                                        Button {
+                                            
+                                        } label: {
+                                            
+                                            Image(systemName: "chevron.backward")
+                                                .foregroundColor(.white)
+                                                .font(.system(size: 30))
+                                            
+                                        }
+                                        
+                                        Spacer()
+                                        
+                                    }.background(.green)
+                                    .padding(.vertical, 30)
+                                    
                                     Spacer()
-
                                     LinearGradient(colors: [.black.opacity(0),
                                                             .black.opacity(0.5),
                                                             .black.opacity(0.8)], startPoint: .top, endPoint: .bottom).frame(height: 70, alignment: .center)
-                                }
+                                }.background(Color.red)
                                 
                                 
                                 Button {
@@ -60,7 +78,7 @@ struct MovieDetailsView: View {
                             HStack(alignment: .center ,spacing: 18, content: {
                                 
                                 if !(self.model.movieDetails?.vote_average?.isZero ?? true) {
-                                    VoteAverageCircleSwiftUIView(voteAverage: self.model.movieDetails?.vote_average ,circleFrame: (width: 35.0, height: 35.0))
+                                    VoteAverageCircleSwiftUIView(voteAverage: self.model.movieDetails?.vote_average ,circleFrame: (width: 32.0, height: 32.0))
                                         .layoutPriority(1)
                                 }
                                 
@@ -73,23 +91,27 @@ struct MovieDetailsView: View {
                                 Image(systemName: "star")
                                 
                             }).layoutPriority(1)
-                            .foregroundColor(.white)
-                            .font(.title2)
-    
+                                .foregroundColor(.white)
+                                .font(.title2)
+                            
                             Spacer()
                             
                             Text(Helper.convertTimeTohourMinute(input: self.model.movieDetails?.runtime ?? 0))
                                 .font(.system(size: 15, weight: .medium, design: .default))
-                                .foregroundColor(Color("placeHolderColor"))
+                                .foregroundColor(Color(.white))
                             
                         }.padding(.horizontal)
+                            .offset(x: self.showOptions ? 0 : -350)
+                            .opacity(self.showOptions ? 1 : 0.2)
+                            .animation(.interpolatingSpring(stiffness: 40, damping: 8).delay(0.3), value: self.showOptions)
+                        
                         
                         VStack(alignment: .leading, spacing: 10) {
                             
                             Group {
                                 
                                 VStack(alignment: .leading, spacing: 5) {
-                                
+                                    
                                     Text(self.model.movieDetails?.title ?? "").font(.system(size: 22, weight: .semibold))
                                     
                                     Text(self.model.movieDetails?.tagline ?? "")
@@ -103,11 +125,11 @@ struct MovieDetailsView: View {
                                     Text(Helper.convertDateFormat(inputDate: self.model.movieDetails?.release_date ?? ""))
                                     
                                     Text(self.model.movieDetails?.genres.map{$0.name ?? ""}.joined(separator: ", ") ?? "")
-                                        
+                                    
                                         .foregroundColor(.gray)
-                                        
+                                    
                                 }.font(.system(size: 15, weight: .regular))
-                                .foregroundColor(.gray)
+                                    .foregroundColor(.gray)
                                 
                                 
                                 
@@ -122,7 +144,7 @@ struct MovieDetailsView: View {
                                 
                                 //Cast List
                                 CastHorizontalListView(castList: self.model.movieDetails?.credits?.cast ?? [castDataModel]())
-                                   
+                                
                                 HStack {
                                     
                                     Spacer()
@@ -135,11 +157,11 @@ struct MovieDetailsView: View {
                                             Text("Review")
                                             Image(systemName: "captions.bubble")
                                         }.padding()
-
+                                        
                                         
                                     }.background(.ultraThinMaterial)
-                                    .cornerRadius(10)
-                                    .padding()
+                                        .cornerRadius(10)
+                                        .padding()
                                 }
                                 
                             })
@@ -149,13 +171,15 @@ struct MovieDetailsView: View {
                     
                 }
                 Spacer()
-                
+                    .navigationBarHidden(true)
             }.onAppear {
-                model.getMoviesDetails(movieID: movieID ?? 0)
+                model.getMoviesDetails(movieID: movieID ?? 338953)
+                self.showOptions = true
+                
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
-            .ignoresSafeArea(edges: .top)
             
         }
+        .ignoresSafeArea(edges: .top)
         
         
     }
