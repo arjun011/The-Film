@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct PeopleListView: View {
-    @ObservedObject private var model = PersonsModel()
+    @StateObject private var model = PersonsModel()
     private var threeColumnGrid = [GridItem(.flexible()), GridItem(.flexible())]
     var body: some View {
         VStack(alignment: .center) {

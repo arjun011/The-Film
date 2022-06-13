@@ -55,7 +55,7 @@ struct PersonDetailsView: View {
                             
                         }.font(.system(size: 20, weight: .bold))
                             .padding(.horizontal, 10)
-                            .transition(.move(edge: .trailing).combined(with: .opacity))
+                            .transition(.move(edge: .leading).combined(with: .opacity))
                         
                     }
                     

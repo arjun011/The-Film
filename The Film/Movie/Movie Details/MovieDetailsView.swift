@@ -13,7 +13,7 @@ struct MovieDetailsView: View {
     var movieID:Int?
     @StateObject private var model = MovieDetailsOO()
     @State private var playTrailer = false
-    
+    @Environment(\.presentationMode) var presentationMode
     // Animation variables
     @State var showOptions:Bool = false
     
@@ -34,30 +34,28 @@ struct MovieDetailsView: View {
                                 
                                 VStack(alignment: .center) {
                                     
-                                    HStack(alignment: .center) {
-                                        
-                                        Button {
-                                            
-                                        } label: {
-                                            
-                                            Image(systemName: "chevron.backward")
-                                                .foregroundColor(.white)
-                                                .font(.system(size: 30))
-                                            
-                                        }
-                                        
-                                        Spacer()
-                                        
-                                    }.background(.green)
-                                    .padding(.vertical, 30)
+//                                    HStack(alignment: .center) {
+//
+//                                        Button {
+//                                            presentationMode.wrappedValue.dismiss()
+//                                        } label: {
+//
+//                                            Image(systemName: "chevron.backward")
+//                                                .foregroundColor(.white)
+//                                                .font(.system(size: 30))
+//
+//                                        }.padding()
+//
+//                                        Spacer()
+//
+//                                    }
+//                                    .padding(.vertical, 30)
                                     
                                     Spacer()
                                     LinearGradient(colors: [.black.opacity(0),
                                                             .black.opacity(0.5),
                                                             .black.opacity(0.8)], startPoint: .top, endPoint: .bottom).frame(height: 70, alignment: .center)
-                                }.background(Color.red)
-                                
-                                
+                                }
                                 Button {
                                     self.playTrailer.toggle()
                                     print("Play Video")
@@ -171,7 +169,7 @@ struct MovieDetailsView: View {
                     
                 }
                 Spacer()
-                    .navigationBarHidden(true)
+            
             }.onAppear {
                 model.getMoviesDetails(movieID: movieID ?? 338953)
                 self.showOptions = true
